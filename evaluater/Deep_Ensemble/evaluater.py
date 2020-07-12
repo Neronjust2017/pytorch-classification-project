@@ -23,7 +23,7 @@ class EvaluaterDE(BaseEvaluater):
         self.model.eval()
 
         Outputs = torch.zeros(self.test_data_loader.n_samples, self.model.output_dim).to(self.device)
-        targets = torch.zeros(self.test_data_loader.n_samples, self.model.output_dim)
+        targets = torch.zeros(self.test_data_loader.n_samples)
 
         with torch.no_grad(): # torch.no_grad() 是一个上下文管理器，被该语句 wrap 起来的部分将不会track 梯度。
             start = 0
@@ -33,7 +33,7 @@ class EvaluaterDE(BaseEvaluater):
 
                 output = self.model(data)
                 Outputs[start:end, :] = output
-                targets[start:end, :] = target
+                targets[start:end] = target
                 start = end
 
                 loss = self.criterion(output, target)

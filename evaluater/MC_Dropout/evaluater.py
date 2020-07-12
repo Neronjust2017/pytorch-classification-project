@@ -3,7 +3,7 @@ import torch
 from torchvision.utils import make_grid
 from base import BaseEvaluater
 from utils import *
-from model.metric import *
+from evaluater.utils import test_uncertainities
 
 class EvaluaterMC(BaseEvaluater):
     """
@@ -15,14 +15,14 @@ class EvaluaterMC(BaseEvaluater):
         self.test_data_loader = test_data_loader
         self.test_metrics = MetricTracker('loss', *[m.__name__ for m in self.metric_ftns])
 
-    def evaluate(self, samples=1000):
+    def evaluate(self, samples=100):
         """
         Evaluate after training procedure finished
 
         :return: A log that contains information about validation
         """
         Outputs = torch.zeros(self.test_data_loader.n_samples, self.model.num_classes, samples).to(self.device)
-        targets = torch.zeros(self.test_data_loader.n_samples, self.model.num_classes)
+        targets = torch.zeros(self.test_data_loader.n_samples)
 
         self.model.eval()
 
@@ -51,7 +51,7 @@ class EvaluaterMC(BaseEvaluater):
                     loss /= samples
 
                 Outputs[start:end, :, :] = outputs
-                targets[start:end, :] = target
+                targets[start:end] = target
                 start = end
 
                 self.test_metrics.update('loss', loss.item())
@@ -64,5 +64,4 @@ class EvaluaterMC(BaseEvaluater):
             self.logger.info('    {:15s}: {}'.format(str(key), value))
 
         # self._visualization(Outputs, targets)
-
-
+        test_uncertainities(Outputs, targets, self.model.num_classes, self.logger, save_path=str(self.result_dir))

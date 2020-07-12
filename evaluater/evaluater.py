@@ -57,4 +57,3 @@ class Evaluater(BaseEvaluater):
         scatter = self.config["evaluater"]["visualization"]["scatter"]
         plot_prediction(Outputs, targets, save_path, train, scatter)
 
-

@@ -84,7 +84,7 @@ def readmts_uci_har(filename):  # file_name = 'datasets/uts_data/' + config.data
 
     path_train = filename + '/train/Inertial Signals/'
     file_train = ['body_acc_x_train.txt', 'body_acc_y_train.txt', 'body_acc_z_train.txt', 'body_gyro_x_train.txt',
-                  'body_gyro_y_train.txt', 'body_gyro_z_train.txt', 'total_acc_x_train.txt', 'total_acc_x_train.txt',
+                  'body_gyro_y_train.txt', 'body_gyro_z_train.txt', 'total_acc_x_train.txt', 'total_acc_y_train.txt',
                   'total_acc_z_train.txt']
     list_train = []
     for i in range(9):
@@ -103,7 +103,7 @@ def readmts_uci_har(filename):  # file_name = 'datasets/uts_data/' + config.data
 
     path_test = filename + '/test/Inertial Signals/'
     file_test = ['body_acc_x_test.txt', 'body_acc_y_test.txt', 'body_acc_z_test.txt', 'body_gyro_x_test.txt',
-                 'body_gyro_y_test.txt', 'body_gyro_z_test.txt', 'total_acc_x_test.txt', 'total_acc_x_test.txt',
+                 'body_gyro_y_test.txt', 'body_gyro_z_test.txt', 'total_acc_x_test.txt', 'total_acc_y_test.txt',
                  'total_acc_z_test.txt']
     list_test = []
     for i in range(9):
@@ -127,6 +127,11 @@ def readmts_uci_har(filename):  # file_name = 'datasets/uts_data/' + config.data
     permutation = np.random.permutation(test_size)
     X_test = test_data[permutation, :, :]
     y_test = test_label[permutation]
+
+    # X_train = train_data
+    # y_train = train_label
+    # X_test = test_data
+    # y_test = test_label
 
     return X_train, y_train, X_test, y_test
 

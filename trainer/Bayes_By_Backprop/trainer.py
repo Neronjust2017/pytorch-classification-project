@@ -106,7 +106,7 @@ class TrainerBayes(BaseTrainer):
             self.lr_scheduler.step()
         return log
 
-    def _valid_epoch(self, epoch, samples=100):
+    def _valid_epoch(self, epoch, samples=10):
         """
         Validate after training an epoch
 

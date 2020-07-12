@@ -61,9 +61,9 @@
     },
     "trainer": {
         "type": "Bayes_By_Backprop",
-        "epochs": 100,
+        "epochs": 50,
         "save_dir": "saved/",
-        "save_period": 1,
+        "save_period": 50,
         "verbosity": 2,
         "monitor": "min val_loss",
         "early_stop": 10,

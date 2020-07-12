@@ -76,7 +76,7 @@ class TrainerMc(BaseTrainer):
             self.lr_scheduler.step()
         return log
 
-    def _valid_epoch(self, epoch, samples=1000):
+    def _valid_epoch(self, epoch, samples=100):
         """
         Validate after training an epoch
 
