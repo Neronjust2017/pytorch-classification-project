@@ -3,6 +3,7 @@ import torch
 from torchvision.utils import make_grid
 from base import BaseEvaluater, BaseEvaluaterEnsemble
 from utils import *
+from evaluater.utils import test_uncertainities
 
 
 class EvaluaterDEEnsemble(BaseEvaluaterEnsemble):
@@ -22,13 +23,13 @@ class EvaluaterDEEnsemble(BaseEvaluaterEnsemble):
 
         :return: A log that contains information about validation
         """
-        Outputs = torch.zeros(self.test_data_loader.n_samples, self.models[0].output_dim, self.n_ensembles)
+        Outputs = torch.zeros(self.test_data_loader.n_samples, self.models[0].num_classes, self.n_ensembles)
         global targets
 
         for i, model in enumerate(self.models):
             model.eval()
 
-            outputs = torch.zeros(self.test_data_loader.n_samples, model.output_dim).to(self.device)
+            outputs = torch.zeros(self.test_data_loader.n_samples, model.num_classes).to(self.device)
             targets = torch.zeros(self.test_data_loader.n_samples)
 
             with torch.no_grad(): # torch.no_grad() 是一个上下文管理器，被该语句 wrap 起来的部分将不会track 梯度。
@@ -58,7 +59,8 @@ class EvaluaterDEEnsemble(BaseEvaluaterEnsemble):
         for key, value in result.items():
             self.logger.info('    {:15s}: {}'.format(str(key), value))
 
-        self._visualization_ensemble(Outputs, targets)
+        # self._visualization_ensemble(Outputs, targets)
+        test_uncertainities(Outputs, targets, self.models[0].num_classes, self.logger, save_path=str(self.result_dir))
 
     def _visualization(self, outputs, targets, i):
         save_path = str(self.result_dir)

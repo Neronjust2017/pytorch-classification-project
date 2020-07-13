@@ -22,7 +22,7 @@ class EvaluaterDE(BaseEvaluater):
         """
         self.model.eval()
 
-        Outputs = torch.zeros(self.test_data_loader.n_samples, self.model.output_dim).to(self.device)
+        Outputs = torch.zeros(self.test_data_loader.n_samples, self.model.num_classes).to(self.device)
         targets = torch.zeros(self.test_data_loader.n_samples)
 
         with torch.no_grad(): # torch.no_grad() 是一个上下文管理器，被该语句 wrap 起来的部分将不会track 梯度。
@@ -48,7 +48,7 @@ class EvaluaterDE(BaseEvaluater):
         for key, value in result.items():
             self.logger.info('    {:15s}: {}'.format(str(key), value))
 
-        self._visualization(Outputs, targets)
+        # self._visualization(Outputs, targets)
 
     def _visualization(self, Outputs, targets):
         save_path = str(self.result_dir)

@@ -58,8 +58,6 @@ class HumanActivityRecognitionDataLoader(BaseDataLoader):
     def __init__(self, data_dir, batch_size, shuffle=True, validation_split=0.0, test_split=0.0, num_workers=1,
                  training=True):
 
-        from data.lstm_architecture import one_hot, run_with_config
-
         INPUT_SIGNAL_TYPES = [
             "body_acc_x_",
             "body_acc_y_",
@@ -82,8 +80,7 @@ class HumanActivityRecognitionDataLoader(BaseDataLoader):
             "LAYING"
         ]
 
-        DATA_PATH = "data/"
-        DATASET_PATH = DATA_PATH + "UCI_HAR_Dataset/"
+        DATASET_PATH = data_dir
 
         TRAIN = "train/"
         TEST = "test/"

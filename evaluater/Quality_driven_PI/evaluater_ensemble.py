@@ -5,6 +5,7 @@ from base import BaseEvaluater, BaseEvaluaterEnsemble
 from utils import *
 from trainer.Quality_driven_PI.trainer import Loss
 from model.metric import *
+from evaluater.utils import test_uncertainities
 
 class EvaluaterQdEnsemble(BaseEvaluaterEnsemble):
     """
@@ -46,7 +47,7 @@ class EvaluaterQdEnsemble(BaseEvaluaterEnsemble):
             model.eval()
     
             outputs = torch.zeros(self.test_data_loader.n_samples, model.output_dim).to(self.device)
-            targets = torch.zeros(self.test_data_loader.n_samples, model.output_dim)
+            targets = torch.zeros(self.test_data_loader.n_samples)
     
             with torch.no_grad(): # torch.no_grad() 是一个上下文管理器，被该语句 wrap 起来的部分将不会track 梯度。
                 start = 0
@@ -56,7 +57,7 @@ class EvaluaterQdEnsemble(BaseEvaluaterEnsemble):
     
                     output = model(data)
                     outputs[start:end, :] = output
-                    targets[start:end, :] = target
+                    targets[start:end] = target
                     start = end
     
                     loss, PICP, MPIW = self.loss(output, target)
@@ -74,7 +75,8 @@ class EvaluaterQdEnsemble(BaseEvaluaterEnsemble):
         for key, value in result.items():
             self.logger.info('    {:15s}: {}'.format(str(key), value))
 
-        self._visualization_ensemble(Outputs, targets)
+        # self._visualization_ensemble(Outputs, targets)
+        test_uncertainities(Outputs, targets, self.models[0].num_classes, self.logger, save_path=str(self.result_dir))
 
     def _visualization(self, outputs, targets, i):
         save_path = str(self.result_dir)
