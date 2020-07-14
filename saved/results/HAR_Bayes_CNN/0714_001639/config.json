@@ -1,0 +1,83 @@
+{
+    "optimizer": {
+        "type": "Adam",
+        "args": {
+            "amsgrad": true,
+            "weight_decay": 0,
+            "lr": 0.001
+        }
+    },
+    "loss": "cross_entropy_loss",
+    "metrics": [
+        "accuracy",
+        "precision",
+        "recall",
+        "f1"
+    ],
+    "evaluater": {
+        "verbosity": 2,
+        "visualization": {
+            "scatter": true
+        },
+        "result_dir": "saved/"
+    },
+    "trainer": {
+        "verbosity": 2,
+        "save_dir": "saved/",
+        "monitor": "min val_loss",
+        "epochs": 100,
+        "type": "Bayes_By_Backprop",
+        "tensorboard": true,
+        "save_period": 1,
+        "early_stop": 10
+    },
+    "name": "HAR_Bayes_CNN",
+    "lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 50,
+            "gamma": 0.1
+        }
+    },
+    "arch": {
+        "type": "Bayes_CNN",
+        "args": {
+            "prior": {
+                "type": "GMM_prior",
+                "paramters": {
+                    "mu1": 0,
+                    "pi": 0.75,
+                    "sigma2": 0.0005,
+                    "sigma1": 10,
+                    "mu2": 0
+                }
+            },
+            "input_dim": 9,
+            "filters": [
+                32,
+                64,
+                128
+            ],
+            "kernels": [
+                5,
+                5,
+                5
+            ],
+            "n_hid": 100,
+            "num_classes": 6
+        },
+        "Bayes": "Bayes_By_Backprop"
+    },
+    "n_gpu": 1,
+    "data_loader": {
+        "type": "HumanActivityRecognitionDataLoader",
+        "args": {
+            "batch_size": 128,
+            "num_workers": 0,
+            "test_split": 0.1,
+            "validation_split": 0.1,
+            "data_dir": "data/UCI_HAR_Dataset",
+            "shuffle": true
+        }
+    }
+}

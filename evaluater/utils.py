@@ -5,14 +5,17 @@ import matplotlib.pyplot as plt
 
 def variation_ratio(output):
     output = output.cpu()
-    output_softmax = F.softmax(output, dim=1)
-    n_samples = output.shape[2]
-    c_star = torch.argmax(output_softmax, dim=1)
-    count = torch.zeros(output.shape[0], 2)
+    output_softmax = F.softmax(output, dim=1).numpy()
+    n_samples = output_softmax.shape[2]
+    c_star = np.argmax(output_softmax, axis=1)
+    count = np.zeros((output_softmax.shape[0], 2))
     for i in range(count.shape[0]):
+        # c = np.bincount(c_star[i, :])
+        # count[i, 0] = torch.argmax(torch.from_numpy(c))
+        # count[i, 1] = c[int(count[i, 0])]
         c = np.bincount(c_star[i, :])
-        count[i, 0] = torch.argmax(torch.from_numpy(c))
-        count[i, 1] = c[int(count[i,0])]
+        count[i, 0] = np.argmax(c)
+        count[i, 1] = c[int(count[i, 0])]
 
     fx = count[:, 1]
     variation_ratio = 1 - fx / n_samples
