@@ -1,0 +1,167 @@
+2020-07-14 11:39:42,930 - train - INFO - CNN_dropout(
+  (conv): ModuleList(
+    (0): Conv1d(9, 256, kernel_size=(3,), stride=(1,))
+  )
+  (fc): Linear(in_features=32000, out_features=6, bias=True)
+  (pool): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  (act): ReLU(inplace=True)
+)
+Trainable parameters: 199174
+2020-07-14 11:39:57,738 - trainer - INFO -     loss           : 1.0729536659958832
+2020-07-14 11:39:57,739 - trainer - INFO -     precision      : 0.7385232586652566
+2020-07-14 11:39:57,739 - trainer - INFO -     val_precision  : 0.7850991961558456
+2020-07-14 11:39:57,740 - trainer - INFO -     recall         : 0.7337170141332636
+2020-07-14 11:39:57,740 - trainer - INFO -     val_f1         : 0.7622350853518977
+2020-07-14 11:39:57,740 - trainer - INFO -     val_recall     : 0.7796971853283684
+2020-07-14 11:39:57,740 - trainer - INFO -     val_accuracy   : 0.7750400641025642
+2020-07-14 11:39:57,740 - trainer - INFO -     epoch          : 1
+2020-07-14 11:39:57,740 - trainer - INFO -     f1             : 0.7105661727925865
+2020-07-14 11:39:57,741 - trainer - INFO -     val_loss       : 0.9143713791193966
+2020-07-14 11:39:57,741 - trainer - INFO -     accuracy       : 0.7428994766009853
+2020-07-14 11:39:57,748 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch1.pth ...
+2020-07-14 11:39:57,755 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:40:07,290 - trainer - INFO -     loss           : 0.21944439852198785
+2020-07-14 11:40:07,290 - trainer - INFO -     precision      : 0.9227035492306814
+2020-07-14 11:40:07,291 - trainer - INFO -     val_precision  : 0.8132974948478559
+2020-07-14 11:40:07,291 - trainer - INFO -     recall         : 0.9187863270074657
+2020-07-14 11:40:07,291 - trainer - INFO -     val_f1         : 0.808292228124452
+2020-07-14 11:40:07,291 - trainer - INFO -     val_recall     : 0.8108795862294005
+2020-07-14 11:40:07,291 - trainer - INFO -     val_accuracy   : 0.8159555288461539
+2020-07-14 11:40:07,292 - trainer - INFO -     epoch          : 2
+2020-07-14 11:40:07,292 - trainer - INFO -     f1             : 0.9171196573582232
+2020-07-14 11:40:07,292 - trainer - INFO -     val_loss       : 0.689040759592257
+2020-07-14 11:40:07,292 - trainer - INFO -     accuracy       : 0.9184883004926109
+2020-07-14 11:40:07,300 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch2.pth ...
+2020-07-14 11:40:07,308 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:40:16,524 - trainer - INFO -     loss           : 0.17162561883604696
+2020-07-14 11:40:16,525 - trainer - INFO -     precision      : 0.9376151905174342
+2020-07-14 11:40:16,525 - trainer - INFO -     val_precision  : 0.8045122074728464
+2020-07-14 11:40:16,525 - trainer - INFO -     recall         : 0.9346205697504064
+2020-07-14 11:40:16,526 - trainer - INFO -     val_f1         : 0.7905298872309093
+2020-07-14 11:40:16,526 - trainer - INFO -     val_recall     : 0.8027301239543302
+2020-07-14 11:40:16,526 - trainer - INFO -     val_accuracy   : 0.8016125801282051
+2020-07-14 11:40:16,526 - trainer - INFO -     epoch          : 3
+2020-07-14 11:40:16,526 - trainer - INFO -     f1             : 0.9329487196190812
+2020-07-14 11:40:16,526 - trainer - INFO -     val_loss       : 0.7656423435353618
+2020-07-14 11:40:16,527 - trainer - INFO -     accuracy       : 0.932977986453202
+2020-07-14 11:40:16,539 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch3.pth ...
+2020-07-14 11:40:26,045 - trainer - INFO -     loss           : 0.15524991487393053
+2020-07-14 11:40:26,045 - trainer - INFO -     precision      : 0.937542652634683
+2020-07-14 11:40:26,045 - trainer - INFO -     val_precision  : 0.8232988964349062
+2020-07-14 11:40:26,045 - trainer - INFO -     recall         : 0.9334795435261208
+2020-07-14 11:40:26,046 - trainer - INFO -     val_f1         : 0.8206924002747412
+2020-07-14 11:40:26,046 - trainer - INFO -     val_recall     : 0.829631008783284
+2020-07-14 11:40:26,051 - trainer - INFO -     val_accuracy   : 0.8322315705128206
+2020-07-14 11:40:26,052 - trainer - INFO -     epoch          : 4
+2020-07-14 11:40:26,052 - trainer - INFO -     f1             : 0.9319998052024666
+2020-07-14 11:40:26,052 - trainer - INFO -     val_loss       : 0.6944429613826879
+2020-07-14 11:40:26,053 - trainer - INFO -     accuracy       : 0.9322660098522167
+2020-07-14 11:40:26,062 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch4.pth ...
+2020-07-14 11:40:35,429 - trainer - INFO -     loss           : 0.14208622868613657
+2020-07-14 11:40:35,430 - trainer - INFO -     precision      : 0.9445548121717011
+2020-07-14 11:40:35,430 - trainer - INFO -     val_precision  : 0.8282027990562465
+2020-07-14 11:40:35,430 - trainer - INFO -     recall         : 0.9438344361312616
+2020-07-14 11:40:35,430 - trainer - INFO -     val_f1         : 0.8234972679760587
+2020-07-14 11:40:35,431 - trainer - INFO -     val_recall     : 0.833039463212465
+2020-07-14 11:40:35,431 - trainer - INFO -     val_accuracy   : 0.8328425480769232
+2020-07-14 11:40:35,431 - trainer - INFO -     epoch          : 5
+2020-07-14 11:40:35,431 - trainer - INFO -     f1             : 0.9421338351177007
+2020-07-14 11:40:35,431 - trainer - INFO -     val_loss       : 0.7574805358762411
+2020-07-14 11:40:35,431 - trainer - INFO -     accuracy       : 0.9407712438423645
+2020-07-14 11:40:35,439 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch5.pth ...
+2020-07-14 11:40:44,848 - trainer - INFO -     loss           : 0.12735205746060227
+2020-07-14 11:40:44,849 - trainer - INFO -     precision      : 0.9508161447406981
+2020-07-14 11:40:44,849 - trainer - INFO -     val_precision  : 0.8110075629285727
+2020-07-14 11:40:44,849 - trainer - INFO -     recall         : 0.9485850299432744
+2020-07-14 11:40:44,850 - trainer - INFO -     val_f1         : 0.7976681946113605
+2020-07-14 11:40:44,850 - trainer - INFO -     val_recall     : 0.8077619905564545
+2020-07-14 11:40:44,850 - trainer - INFO -     val_accuracy   : 0.8094451121794872
+2020-07-14 11:40:44,850 - trainer - INFO -     epoch          : 6
+2020-07-14 11:40:44,850 - trainer - INFO -     f1             : 0.9469112113820843
+2020-07-14 11:40:44,850 - trainer - INFO -     val_loss       : 0.7736272378107033
+2020-07-14 11:40:44,851 - trainer - INFO -     accuracy       : 0.9455818965517241
+2020-07-14 11:40:44,858 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch6.pth ...
+2020-07-14 11:40:54,323 - trainer - INFO -     loss           : 0.1266197745766292
+2020-07-14 11:40:54,324 - trainer - INFO -     precision      : 0.948817795924635
+2020-07-14 11:40:54,324 - trainer - INFO -     val_precision  : 0.8226686133657547
+2020-07-14 11:40:54,324 - trainer - INFO -     recall         : 0.9459726150584593
+2020-07-14 11:40:54,325 - trainer - INFO -     val_f1         : 0.8089309907269032
+2020-07-14 11:40:54,325 - trainer - INFO -     val_recall     : 0.8184948161384216
+2020-07-14 11:40:54,325 - trainer - INFO -     val_accuracy   : 0.8166666666666668
+2020-07-14 11:40:54,330 - trainer - INFO -     epoch          : 7
+2020-07-14 11:40:54,331 - trainer - INFO -     f1             : 0.9448020969950031
+2020-07-14 11:40:54,331 - trainer - INFO -     val_loss       : 0.810600788352122
+2020-07-14 11:40:54,331 - trainer - INFO -     accuracy       : 0.9434844519704434
+2020-07-14 11:40:54,340 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch7.pth ...
+2020-07-14 11:41:04,009 - trainer - INFO -     loss           : 0.11981402634277177
+2020-07-14 11:41:04,010 - trainer - INFO -     precision      : 0.9535235304922776
+2020-07-14 11:41:04,010 - trainer - INFO -     val_precision  : 0.8329868639981614
+2020-07-14 11:41:04,011 - trainer - INFO -     recall         : 0.9519406915410068
+2020-07-14 11:41:04,011 - trainer - INFO -     val_f1         : 0.8210482045797928
+2020-07-14 11:41:04,011 - trainer - INFO -     val_recall     : 0.8274070928033673
+2020-07-14 11:41:04,011 - trainer - INFO -     val_accuracy   : 0.8321314102564102
+2020-07-14 11:41:04,011 - trainer - INFO -     epoch          : 8
+2020-07-14 11:41:04,011 - trainer - INFO -     f1             : 0.9513791902406019
+2020-07-14 11:41:04,012 - trainer - INFO -     val_loss       : 0.7566906034905977
+2020-07-14 11:41:04,012 - trainer - INFO -     accuracy       : 0.9493342056650247
+2020-07-14 11:41:04,019 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch8.pth ...
+2020-07-14 11:41:13,540 - trainer - INFO -     loss           : 0.12189908761843245
+2020-07-14 11:41:13,540 - trainer - INFO -     precision      : 0.9536051520396979
+2020-07-14 11:41:13,541 - trainer - INFO -     val_precision  : 0.8308737918449466
+2020-07-14 11:41:13,541 - trainer - INFO -     recall         : 0.9509426348077266
+2020-07-14 11:41:13,541 - trainer - INFO -     val_f1         : 0.8260386724847426
+2020-07-14 11:41:13,541 - trainer - INFO -     val_recall     : 0.8316680029829914
+2020-07-14 11:41:13,541 - trainer - INFO -     val_accuracy   : 0.8347956730769232
+2020-07-14 11:41:13,541 - trainer - INFO -     epoch          : 9
+2020-07-14 11:41:13,542 - trainer - INFO -     f1             : 0.9500321222432417
+2020-07-14 11:41:13,542 - trainer - INFO -     val_loss       : 0.7823807650978518
+2020-07-14 11:41:13,542 - trainer - INFO -     accuracy       : 0.9482566194581281
+2020-07-14 11:41:13,550 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch9.pth ...
+2020-07-14 11:41:22,797 - trainer - INFO -     loss           : 0.10138228402692942
+2020-07-14 11:41:22,799 - trainer - INFO -     precision      : 0.9608647422974409
+2020-07-14 11:41:22,799 - trainer - INFO -     val_precision  : 0.8413890187184799
+2020-07-14 11:41:22,799 - trainer - INFO -     recall         : 0.9591687882146256
+2020-07-14 11:41:22,800 - trainer - INFO -     val_f1         : 0.8318156035342236
+2020-07-14 11:41:22,800 - trainer - INFO -     val_recall     : 0.8406747802807136
+2020-07-14 11:41:22,800 - trainer - INFO -     val_accuracy   : 0.8400040064102564
+2020-07-14 11:41:22,800 - trainer - INFO -     epoch          : 10
+2020-07-14 11:41:22,800 - trainer - INFO -     f1             : 0.9588903434029201
+2020-07-14 11:41:22,801 - trainer - INFO -     val_loss       : 0.9083759673015649
+2020-07-14 11:41:22,801 - trainer - INFO -     accuracy       : 0.9570120073891626
+2020-07-14 11:41:22,808 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch10.pth ...
+2020-07-14 11:41:32,013 - trainer - INFO -     loss           : 0.09880412805326874
+2020-07-14 11:41:32,014 - trainer - INFO -     precision      : 0.9626631019125265
+2020-07-14 11:41:32,014 - trainer - INFO -     val_precision  : 0.8311416264993161
+2020-07-14 11:41:32,014 - trainer - INFO -     recall         : 0.9617198368967254
+2020-07-14 11:41:32,014 - trainer - INFO -     val_f1         : 0.8189934764610499
+2020-07-14 11:41:32,014 - trainer - INFO -     val_recall     : 0.8291919413349421
+2020-07-14 11:41:32,015 - trainer - INFO -     val_accuracy   : 0.8290364583333334
+2020-07-14 11:41:32,015 - trainer - INFO -     epoch          : 11
+2020-07-14 11:41:32,015 - trainer - INFO -     f1             : 0.9607692017825101
+2020-07-14 11:41:32,015 - trainer - INFO -     val_loss       : 0.9383152989570737
+2020-07-14 11:41:32,015 - trainer - INFO -     accuracy       : 0.9587823275862069
+2020-07-14 11:41:32,023 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch11.pth ...
+2020-07-14 11:41:41,120 - trainer - INFO -     loss           : 0.09706204909105685
+2020-07-14 11:41:41,121 - trainer - INFO -     precision      : 0.9629411972945475
+2020-07-14 11:41:41,121 - trainer - INFO -     val_precision  : 0.8370139222951308
+2020-07-14 11:41:41,121 - trainer - INFO -     recall         : 0.9616439648279759
+2020-07-14 11:41:41,121 - trainer - INFO -     val_f1         : 0.8198714229882679
+2020-07-14 11:41:41,121 - trainer - INFO -     val_recall     : 0.8309155809747107
+2020-07-14 11:41:41,121 - trainer - INFO -     val_accuracy   : 0.8328826121794872
+2020-07-14 11:41:41,122 - trainer - INFO -     epoch          : 12
+2020-07-14 11:41:41,122 - trainer - INFO -     f1             : 0.9607020765285379
+2020-07-14 11:41:41,122 - trainer - INFO -     val_loss       : 0.8928064811173055
+2020-07-14 11:41:41,122 - trainer - INFO -     accuracy       : 0.9588400554187192
+2020-07-14 11:41:41,130 - trainer - INFO - Saving checkpoint: saved/models/HAR_MC_CNN/0714_113939/checkpoint-epoch12.pth ...
+2020-07-14 11:41:50,416 - trainer - INFO -     loss           : 0.09997483753924531
+2020-07-14 11:41:50,417 - trainer - INFO -     precision      : 0.9615656180002475
+2020-07-14 11:41:50,417 - trainer - INFO -     val_precision  : 0.8352212220741264
+2020-07-14 11:41:50,417 - trainer - INFO -     recall         : 0.9616117877682189
+2020-07-14 11:41:50,417 - trainer - INFO -     val_f1         : 0.830428665134229
+2020-07-14 11:41:50,417 - trainer - INFO -     val_recall     : 0.8376245446770364
+2020-07-14 11:41:50,418 - trainer - INFO -     val_accuracy   : 0.8373998397435898
+2020-07-14 11:41:50,418 - trainer - INFO -     epoch          : 13
+2020-07-14 11:41:50,418 - trainer - INFO -     f1             : 0.9599263754397762
+2020-07-14 11:41:50,418 - trainer - INFO -     val_loss       : 0.8429049966453454
+2020-07-14 11:41:50,418 - trainer - INFO -     accuracy       : 0.9579933805418719
+2020-07-14 11:41:50,418 - trainer - INFO - Validation performance didn't improve for 10 epochs. Training stops.

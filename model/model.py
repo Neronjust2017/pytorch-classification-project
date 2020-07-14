@@ -102,7 +102,7 @@ class CNN(BaseModel):
         self.filters = filters
         self.kernels = kernels
 
-        num_features = 256*123
+        num_features = 256*125
         conv = []
         conv.append(nn.Conv1d(self.input_dim, self.filters[0], self.kernels[0]))
         for i in range(1, len(self.filters)):

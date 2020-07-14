@@ -1,0 +1,69 @@
+{
+    "name": "HAR_MC_CNN",
+    "arch": {
+        "type": "CNN_dropout",
+        "Bayes": "MC_dropout",
+        "args": {
+            "input_dim": 9,
+            "pdrop": 0.2,
+            "num_classes": 6,
+            "filters": [
+                256
+            ],
+            "kernels": [
+                3
+            ]
+        }
+    },
+    "trainer": {
+        "type": "MC_dropout",
+        "save_dir": "saved/",
+        "monitor": "min val_loss",
+        "save_period": 1,
+        "early_stop": 10,
+        "epochs": 100,
+        "verbosity": 2,
+        "tensorboard": true
+    },
+    "lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 50,
+            "gamma": 0.1
+        }
+    },
+    "optimizer": {
+        "type": "Adam",
+        "args": {
+            "weight_decay": 0,
+            "lr": 0.001,
+            "amsgrad": true
+        }
+    },
+    "evaluater": {
+        "result_dir": "saved/",
+        "visualization": {
+            "scatter": true
+        },
+        "verbosity": 2
+    },
+    "data_loader": {
+        "type": "HumanActivityRecognitionDataLoader",
+        "args": {
+            "batch_size": 128,
+            "validation_split": 0.1,
+            "test_split": 0.1,
+            "data_dir": "data/UCI_HAR_Dataset",
+            "shuffle": true,
+            "num_workers": 0
+        }
+    },
+    "loss": "cross_entropy_loss",
+    "n_gpu": 1,
+    "metrics": [
+        "accuracy",
+        "precision",
+        "recall",
+        "f1"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "metrics": [
+        "accuracy",
+        "precision",
+        "recall",
+        "f1"
+    ],
+    "evaluater": {
+        "visualization": {
+            "scatter": true
+        },
+        "result_dir": "saved/",
+        "verbosity": 2
+    },
+    "trainer": {
+        "tensorboard": true,
+        "save_period": 1,
+        "monitor": "min val_loss",
+        "epochs": 100,
+        "save_dir": "saved/",
+        "verbosity": 2,
+        "early_stop": 10,
+        "type": "Bayes_By_Backprop"
+    },
+    "name": "HAR_Bayes_CNN",
+    "loss": "cross_entropy_loss",
+    "optimizer": {
+        "args": {
+            "amsgrad": true,
+            "lr": 0.001,
+            "weight_decay": 0
+        },
+        "type": "Adam"
+    },
+    "n_gpu": 1,
+    "lr_scheduler": {
+        "args": {
+            "gamma": 0.1,
+            "step_size": 50
+        },
+        "type": "StepLR"
+    },
+    "arch": {
+        "Bayes": "Bayes_By_Backprop",
+        "args": {
+            "num_classes": 6,
+            "kernels": [
+                3
+            ],
+            "filters": [
+                256
+            ],
+            "input_dim": 9,
+            "prior": {
+                "paramters": {
+                    "mu2": 0,
+                    "sigma1": 10,
+                    "sigma2": 0.0005,
+                    "mu1": 0,
+                    "pi": 0.75
+                },
+                "type": "GMM_prior"
+            }
+        },
+        "type": "Bayes_CNN"
+    },
+    "data_loader": {
+        "args": {
+            "data_dir": "data/UCI_HAR_Dataset",
+            "validation_split": 0.1,
+            "test_split": 0.1,
+            "batch_size": 128,
+            "num_workers": 0,
+            "shuffle": true
+        },
+        "type": "HumanActivityRecognitionDataLoader"
+    }
+}

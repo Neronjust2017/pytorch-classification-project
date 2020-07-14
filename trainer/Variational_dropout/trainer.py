@@ -51,7 +51,7 @@ class TrainerVd(BaseTrainer):
 
             self.optimizer.zero_grad()
 
-            outputs = torch.zeros(data.shape[0], self.model.output_dim, samples).to(self.device)
+            outputs = torch.zeros(data.shape[0], self.model.num_classes, samples).to(self.device)
             if samples == 1:
                 out, tkl = self.model(data)
                 mlpdw = self.criterion(out, target)
@@ -120,7 +120,7 @@ class TrainerVd(BaseTrainer):
                 data, target = data.to(self.device), target.to(self.device)
 
                 loss = 0
-                outputs = torch.zeros(data.shape[0], self.model.output_dim, samples).to(self.device)
+                outputs = torch.zeros(data.shape[0], self.model.num_classes, samples).to(self.device)
 
                 if samples == 1:
                     out, tkl = self.model(data)

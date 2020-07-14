@@ -158,7 +158,7 @@ class Bayes_MLP_LR(BaseModel):
         return predictions, tlqw_vec, tlpw_vec
 
 class Bayes_CNN(BaseModel):
-    def __init__(self, input_dim, num_classes, filters, kernels, n_hid, prior, activation='ReLU'):
+    def __init__(self, input_dim, num_classes, filters, kernels,  prior, activation='ReLU'):
         super().__init__()
         
         if prior['type'] == 'Gaussian_prior':
@@ -178,21 +178,21 @@ class Bayes_CNN(BaseModel):
         self.num_classes = num_classes
         self.filters = filters
         self.kernels = kernels
-        self.n_hid = n_hid
+        # self.n_hid = n_hid
 
-        num_features = 128*11
+        num_features = 256*125
         conv = []
         conv.append(BayesConv1D_Normalq(self.input_dim, self.filters[0], self.kernels[0], self.prior_instance))
         for i in range(1, len(self.filters)):
             conv.append(BayesConv1D_Normalq(self.filters[i - 1], self.filters[i], self.kernels[i], self.prior_instance))
         self.conv = nn.ModuleList(conv)
-        # self.fc = BayesLinear_Normalq(num_features, self.num_classes, self.prior_instance)
+        self.fc = BayesLinear_Normalq(num_features, self.num_classes, self.prior_instance)
 
-        self.fc1 = BayesLinear_Normalq(num_features, self.n_hid, self.prior_instance)
-        self.fc2 = BayesLinear_Normalq(self.n_hid, self.n_hid, self.prior_instance)
-        self.fc3 = BayesLinear_Normalq(self.n_hid, self.num_classes, self.prior_instance)
+        # self.fc1 = BayesLinear_Normalq(num_features, self.n_hid, self.prior_instance)
+        # self.fc2 = BayesLinear_Normalq(self.n_hid, self.n_hid, self.prior_instance)
+        # self.fc3 = BayesLinear_Normalq(self.n_hid, self.num_classes, self.prior_instance)
 
-        self.pool = nn.MaxPool1d(kernel_size=3, stride=2)
+        self.pool = nn.MaxPool1d(kernel_size=2, stride=1)
 
         # Non linearity
         if activation == 'ReLU':
@@ -218,18 +218,18 @@ class Bayes_CNN(BaseModel):
 
         # print(x.shape)
         x = x.reshape(x.size(0), -1)
+        #
+        # x, lqw, lpw = self.fc1(x, sample)
+        # tlqw = tlqw + lqw
+        # tlpw = tlpw + lpw
+        # x = self.act(x)
+        #
+        # x, lqw, lpw = self.fc2(x, sample)
+        # tlqw = tlqw + lqw
+        # tlpw = tlpw + lpw
+        # x = self.act(x)
 
-        x, lqw, lpw = self.fc1(x, sample)
-        tlqw = tlqw + lqw
-        tlpw = tlpw + lpw
-        x = self.act(x)
-
-        x, lqw, lpw = self.fc2(x, sample)
-        tlqw = tlqw + lqw
-        tlpw = tlpw + lpw
-        x = self.act(x)
-
-        y, lqw, lpw = self.fc3(x, sample)
+        y, lqw, lpw = self.fc(x, sample)
         tlqw = tlqw + lqw
         tlpw = tlpw + lpw
 

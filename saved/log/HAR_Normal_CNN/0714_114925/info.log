@@ -1,0 +1,22 @@
+2020-07-14 11:49:29,489 - train - INFO - CNN(
+  (conv): ModuleList(
+    (0): Conv1d(9, 256, kernel_size=(3,), stride=(1,))
+  )
+  (fc): Linear(in_features=32000, out_features=6, bias=True)
+  (pool): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  (act): ReLU(inplace=True)
+)
+Trainable parameters: 199174
+2020-07-14 11:49:36,553 - trainer - INFO -     val_precision  : 0.8234606717949426
+2020-07-14 11:49:36,553 - trainer - INFO -     loss           : 96.12779248993972
+2020-07-14 11:49:36,553 - trainer - INFO -     epoch          : 1
+2020-07-14 11:49:36,554 - trainer - INFO -     recall         : 0.7907986879817991
+2020-07-14 11:49:36,554 - trainer - INFO -     val_accuracy   : 0.817928685897436
+2020-07-14 11:49:36,554 - trainer - INFO -     accuracy       : 0.793622998768473
+2020-07-14 11:49:36,554 - trainer - INFO -     val_loss       : 83.68745263417561
+2020-07-14 11:49:36,554 - trainer - INFO -     precision      : 0.7918095803373553
+2020-07-14 11:49:36,554 - trainer - INFO -     val_recall     : 0.8205854419234151
+2020-07-14 11:49:36,555 - trainer - INFO -     f1             : 0.7706835740883722
+2020-07-14 11:49:36,555 - trainer - INFO -     val_f1         : 0.8064629188122542
+2020-07-14 11:49:36,562 - trainer - INFO - Saving checkpoint: saved/models/HAR_Normal_CNN/0714_114925/checkpoint-epoch1.pth ...
+2020-07-14 11:49:36,568 - trainer - INFO - Saving current best: model_best.pth ...

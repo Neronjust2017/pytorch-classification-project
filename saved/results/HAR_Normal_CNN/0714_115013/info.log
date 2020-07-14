@@ -1,0 +1,7 @@
+2020-07-14 11:50:35,783 - evaluater - INFO - Loading checkpoint: saved/models/HAR_Normal_CNN/0714_115013/model_best.pth ...
+2020-07-14 11:50:35,787 - evaluater - INFO - Checkpoint loaded from epoch 4
+2020-07-14 11:50:35,884 - evaluater - INFO -     recall         : 0.9604633614807706
+2020-07-14 11:50:35,884 - evaluater - INFO -     precision      : 0.9669142058189246
+2020-07-14 11:50:35,884 - evaluater - INFO -     f1             : 0.9606249798412941
+2020-07-14 11:50:35,884 - evaluater - INFO -     loss           : 11.264583230018616
+2020-07-14 11:50:35,884 - evaluater - INFO -     accuracy       : 0.9609775641025641

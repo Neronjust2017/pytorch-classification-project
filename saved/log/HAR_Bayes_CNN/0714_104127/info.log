@@ -1,0 +1,1709 @@
+2020-07-14 10:41:30,331 - train - INFO - Bayes_CNN(
+  (conv): ModuleList(
+    (0): BayesConv1D_Normalq()
+  )
+  (fc): BayesLinear_Normalq()
+  (pool): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  (act): ReLU(inplace=True)
+)
+Trainable parameters: 398348
+2020-07-14 10:42:26,069 - trainer - INFO -     recall         : 0.5918659172264391
+2020-07-14 10:42:26,070 - trainer - INFO -     f1             : 0.5651848695364069
+2020-07-14 10:42:26,070 - trainer - INFO -     val_loss       : 75529.04036458333
+2020-07-14 10:42:26,071 - trainer - INFO -     pred_cost      : 545.7978255173256
+2020-07-14 10:42:26,071 - trainer - INFO -     loss           : 15592.744191136853
+2020-07-14 10:42:26,071 - trainer - INFO -     precision      : 0.6113412507882395
+2020-07-14 10:42:26,071 - trainer - INFO -     val_recall     : 0.6033378599077827
+2020-07-14 10:42:26,071 - trainer - INFO -     val_f1         : 0.5606991506682807
+2020-07-14 10:42:26,071 - trainer - INFO -     val_kl_cost    : 75005.51041666667
+2020-07-14 10:42:26,071 - trainer - INFO -     val_accuracy   : 0.5994190705128205
+2020-07-14 10:42:26,072 - trainer - INFO -     epoch          : 1
+2020-07-14 10:42:26,072 - trainer - INFO -     accuracy       : 0.6140509544334974
+2020-07-14 10:42:26,072 - trainer - INFO -     val_pred_cost  : 523.530881245931
+2020-07-14 10:42:26,072 - trainer - INFO -     kl_cost        : 15046.946339574353
+2020-07-14 10:42:26,072 - trainer - INFO -     val_precision  : 0.6077405987482599
+2020-07-14 10:42:26,088 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch1.pth ...
+2020-07-14 10:42:26,101 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:43:16,191 - trainer - INFO -     recall         : 0.7460603800286415
+2020-07-14 10:43:16,192 - trainer - INFO -     f1             : 0.7325898756092153
+2020-07-14 10:43:16,192 - trainer - INFO -     val_loss       : 75192.18880208333
+2020-07-14 10:43:16,193 - trainer - INFO -     pred_cost      : 339.6243797828411
+2020-07-14 10:43:16,193 - trainer - INFO -     loss           : 15343.985385237069
+2020-07-14 10:43:16,193 - trainer - INFO -     precision      : 0.7720097912386888
+2020-07-14 10:43:16,193 - trainer - INFO -     val_recall     : 0.6671906808608038
+2020-07-14 10:43:16,193 - trainer - INFO -     val_f1         : 0.6512438331127245
+2020-07-14 10:43:16,193 - trainer - INFO -     val_kl_cost    : 74760.12174479167
+2020-07-14 10:43:16,194 - trainer - INFO -     val_accuracy   : 0.6639122596153846
+2020-07-14 10:43:16,194 - trainer - INFO -     epoch          : 2
+2020-07-14 10:43:16,194 - trainer - INFO -     accuracy       : 0.759832974137931
+2020-07-14 10:43:16,194 - trainer - INFO -     val_pred_cost  : 432.0665232340495
+2020-07-14 10:43:16,194 - trainer - INFO -     kl_cost        : 15004.36099137931
+2020-07-14 10:43:16,194 - trainer - INFO -     val_precision  : 0.6832750597227046
+2020-07-14 10:43:16,208 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch2.pth ...
+2020-07-14 10:43:16,224 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:44:06,422 - trainer - INFO -     recall         : 0.8258393663390817
+2020-07-14 10:44:06,423 - trainer - INFO -     f1             : 0.8185574236098889
+2020-07-14 10:44:06,423 - trainer - INFO -     val_loss       : 74890.337890625
+2020-07-14 10:44:06,423 - trainer - INFO -     pred_cost      : 241.30293944786334
+2020-07-14 10:44:06,423 - trainer - INFO -     loss           : 15192.958900188578
+2020-07-14 10:44:06,423 - trainer - INFO -     precision      : 0.8404109509345802
+2020-07-14 10:44:06,423 - trainer - INFO -     val_recall     : 0.7039216381858021
+2020-07-14 10:44:06,424 - trainer - INFO -     val_f1         : 0.6892008846727271
+2020-07-14 10:44:06,424 - trainer - INFO -     val_kl_cost    : 74481.05403645833
+2020-07-14 10:44:06,424 - trainer - INFO -     val_accuracy   : 0.698417467948718
+2020-07-14 10:44:06,424 - trainer - INFO -     epoch          : 3
+2020-07-14 10:44:06,424 - trainer - INFO -     accuracy       : 0.8329741379310345
+2020-07-14 10:44:06,424 - trainer - INFO -     val_pred_cost  : 409.2855733235677
+2020-07-14 10:44:06,424 - trainer - INFO -     kl_cost        : 14951.655980603447
+2020-07-14 10:44:06,425 - trainer - INFO -     val_precision  : 0.7139407763859125
+2020-07-14 10:44:06,439 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch3.pth ...
+2020-07-14 10:44:06,454 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:44:56,912 - trainer - INFO -     recall         : 0.8798910940549708
+2020-07-14 10:44:56,913 - trainer - INFO -     f1             : 0.8769416440210483
+2020-07-14 10:44:56,913 - trainer - INFO -     val_loss       : 74556.54166666667
+2020-07-14 10:44:56,913 - trainer - INFO -     pred_cost      : 174.89734307650863
+2020-07-14 10:44:56,913 - trainer - INFO -     loss           : 15067.166537580819
+2020-07-14 10:44:56,913 - trainer - INFO -     precision      : 0.8868186343479152
+2020-07-14 10:44:56,913 - trainer - INFO -     val_recall     : 0.7105563522048509
+2020-07-14 10:44:56,913 - trainer - INFO -     val_f1         : 0.6995087484979888
+2020-07-14 10:44:56,913 - trainer - INFO -     val_kl_cost    : 74168.93098958333
+2020-07-14 10:44:56,913 - trainer - INFO -     val_accuracy   : 0.7204727564102563
+2020-07-14 10:44:56,913 - trainer - INFO -     epoch          : 4
+2020-07-14 10:44:56,914 - trainer - INFO -     accuracy       : 0.8823506773399015
+2020-07-14 10:44:56,914 - trainer - INFO -     val_pred_cost  : 387.61028416951496
+2020-07-14 10:44:56,914 - trainer - INFO -     kl_cost        : 14892.269278690732
+2020-07-14 10:44:56,914 - trainer - INFO -     val_precision  : 0.7175996215070062
+2020-07-14 10:44:56,921 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch4.pth ...
+2020-07-14 10:44:56,931 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:45:54,661 - trainer - INFO -     recall         : 0.9019949881201391
+2020-07-14 10:45:54,665 - trainer - INFO -     f1             : 0.8991304028659283
+2020-07-14 10:45:54,666 - trainer - INFO -     val_loss       : 74177.75065104167
+2020-07-14 10:45:54,666 - trainer - INFO -     pred_cost      : 133.71025545843716
+2020-07-14 10:45:54,666 - trainer - INFO -     loss           : 14961.167699353447
+2020-07-14 10:45:54,666 - trainer - INFO -     precision      : 0.9068660239677574
+2020-07-14 10:45:54,666 - trainer - INFO -     val_recall     : 0.7562796617799331
+2020-07-14 10:45:54,667 - trainer - INFO -     val_f1         : 0.7458431992169978
+2020-07-14 10:45:54,667 - trainer - INFO -     val_kl_cost    : 73834.298828125
+2020-07-14 10:45:54,667 - trainer - INFO -     val_accuracy   : 0.7562399839743589
+2020-07-14 10:45:54,667 - trainer - INFO -     epoch          : 5
+2020-07-14 10:45:54,667 - trainer - INFO -     accuracy       : 0.9024784482758621
+2020-07-14 10:45:54,667 - trainer - INFO -     val_pred_cost  : 343.45033264160156
+2020-07-14 10:45:54,668 - trainer - INFO -     kl_cost        : 14827.457435344828
+2020-07-14 10:45:54,668 - trainer - INFO -     val_precision  : 0.7567399627144016
+2020-07-14 10:45:54,684 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch5.pth ...
+2020-07-14 10:45:54,701 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:46:47,246 - trainer - INFO -     recall         : 0.9211157739913794
+2020-07-14 10:46:47,249 - trainer - INFO -     f1             : 0.9177063349757241
+2020-07-14 10:46:47,249 - trainer - INFO -     val_loss       : 73813.21354166667
+2020-07-14 10:46:47,249 - trainer - INFO -     pred_cost      : 110.87364604555327
+2020-07-14 10:46:47,249 - trainer - INFO -     loss           : 14869.322972790947
+2020-07-14 10:46:47,249 - trainer - INFO -     precision      : 0.9221588197079122
+2020-07-14 10:46:47,249 - trainer - INFO -     val_recall     : 0.7783394054128103
+2020-07-14 10:46:47,250 - trainer - INFO -     val_f1         : 0.7675539199993954
+2020-07-14 10:46:47,250 - trainer - INFO -     val_kl_cost    : 73481.818359375
+2020-07-14 10:46:47,250 - trainer - INFO -     val_accuracy   : 0.7757512019230769
+2020-07-14 10:46:47,250 - trainer - INFO -     epoch          : 6
+2020-07-14 10:46:47,250 - trainer - INFO -     accuracy       : 0.918622998768473
+2020-07-14 10:46:47,251 - trainer - INFO -     val_pred_cost  : 331.39610544840497
+2020-07-14 10:46:47,251 - trainer - INFO -     kl_cost        : 14758.449319773707
+2020-07-14 10:46:47,251 - trainer - INFO -     val_precision  : 0.7807288807014979
+2020-07-14 10:46:47,272 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch6.pth ...
+2020-07-14 10:46:47,290 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:47:39,862 - trainer - INFO -     recall         : 0.9260056176833641
+2020-07-14 10:47:39,863 - trainer - INFO -     f1             : 0.9240932656215513
+2020-07-14 10:47:39,863 - trainer - INFO -     val_loss       : 73443.87890625
+2020-07-14 10:47:39,864 - trainer - INFO -     pred_cost      : 92.73187795178643
+2020-07-14 10:47:39,864 - trainer - INFO -     loss           : 14778.469474003232
+2020-07-14 10:47:39,864 - trainer - INFO -     precision      : 0.9278784314112843
+2020-07-14 10:47:39,864 - trainer - INFO -     val_recall     : 0.7865434255038193
+2020-07-14 10:47:39,864 - trainer - INFO -     val_f1         : 0.7730707106258272
+2020-07-14 10:47:39,864 - trainer - INFO -     val_kl_cost    : 73108.578125
+2020-07-14 10:47:39,865 - trainer - INFO -     val_accuracy   : 0.7821013621794872
+2020-07-14 10:47:39,865 - trainer - INFO -     epoch          : 7
+2020-07-14 10:47:39,865 - trainer - INFO -     accuracy       : 0.9240686576354681
+2020-07-14 10:47:39,865 - trainer - INFO -     val_pred_cost  : 335.3015441894531
+2020-07-14 10:47:39,865 - trainer - INFO -     kl_cost        : 14685.737557246768
+2020-07-14 10:47:39,865 - trainer - INFO -     val_precision  : 0.7819479056183294
+2020-07-14 10:47:39,880 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch7.pth ...
+2020-07-14 10:47:39,896 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:48:33,207 - trainer - INFO -     recall         : 0.9341306407956509
+2020-07-14 10:48:33,208 - trainer - INFO -     f1             : 0.9329027929654906
+2020-07-14 10:48:33,208 - trainer - INFO -     val_loss       : 73033.95638020833
+2020-07-14 10:48:33,208 - trainer - INFO -     pred_cost      : 80.30949770171067
+2020-07-14 10:48:33,209 - trainer - INFO -     loss           : 14689.899397225216
+2020-07-14 10:48:33,209 - trainer - INFO -     precision      : 0.9366763861920239
+2020-07-14 10:48:33,209 - trainer - INFO -     val_recall     : 0.8046651750272416
+2020-07-14 10:48:33,209 - trainer - INFO -     val_f1         : 0.7892529726467279
+2020-07-14 10:48:33,209 - trainer - INFO -     val_kl_cost    : 72721.72330729167
+2020-07-14 10:48:33,209 - trainer - INFO -     val_accuracy   : 0.7951822916666668
+2020-07-14 10:48:33,210 - trainer - INFO -     epoch          : 8
+2020-07-14 10:48:33,210 - trainer - INFO -     accuracy       : 0.9317849445812808
+2020-07-14 10:48:33,210 - trainer - INFO -     val_pred_cost  : 312.2317810058594
+2020-07-14 10:48:33,210 - trainer - INFO -     kl_cost        : 14609.589877424569
+2020-07-14 10:48:33,210 - trainer - INFO -     val_precision  : 0.8122590171086782
+2020-07-14 10:48:33,226 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch8.pth ...
+2020-07-14 10:48:33,243 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:49:27,160 - trainer - INFO -     recall         : 0.9355762442515766
+2020-07-14 10:49:27,161 - trainer - INFO -     f1             : 0.9338610913454773
+2020-07-14 10:49:27,161 - trainer - INFO -     val_loss       : 72631.33463541667
+2020-07-14 10:49:27,161 - trainer - INFO -     pred_cost      : 73.71209394520727
+2020-07-14 10:49:27,161 - trainer - INFO -     loss           : 14605.204993938578
+2020-07-14 10:49:27,161 - trainer - INFO -     precision      : 0.9386042942899784
+2020-07-14 10:49:27,162 - trainer - INFO -     val_recall     : 0.8169848504621481
+2020-07-14 10:49:27,162 - trainer - INFO -     val_f1         : 0.8085432736494513
+2020-07-14 10:49:27,162 - trainer - INFO -     val_kl_cost    : 72322.18619791667
+2020-07-14 10:49:27,162 - trainer - INFO -     val_accuracy   : 0.8153445512820513
+2020-07-14 10:49:27,162 - trainer - INFO -     epoch          : 9
+2020-07-14 10:49:27,162 - trainer - INFO -     accuracy       : 0.9325931342364532
+2020-07-14 10:49:27,163 - trainer - INFO -     val_pred_cost  : 309.1478322347005
+2020-07-14 10:49:27,163 - trainer - INFO -     kl_cost        : 14531.492894665947
+2020-07-14 10:49:27,163 - trainer - INFO -     val_precision  : 0.8158417602872742
+2020-07-14 10:49:27,178 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch9.pth ...
+2020-07-14 10:49:27,195 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:50:21,192 - trainer - INFO -     recall         : 0.9390800852253733
+2020-07-14 10:50:21,193 - trainer - INFO -     f1             : 0.9370043823606944
+2020-07-14 10:50:21,193 - trainer - INFO -     val_loss       : 72231.69140625
+2020-07-14 10:50:21,193 - trainer - INFO -     pred_cost      : 66.19793194737927
+2020-07-14 10:50:21,193 - trainer - INFO -     loss           : 14516.796487742457
+2020-07-14 10:50:21,193 - trainer - INFO -     precision      : 0.9404562314701213
+2020-07-14 10:50:21,194 - trainer - INFO -     val_recall     : 0.8065699686118775
+2020-07-14 10:50:21,194 - trainer - INFO -     val_f1         : 0.7942057766007565
+2020-07-14 10:50:21,194 - trainer - INFO -     val_kl_cost    : 71921.474609375
+2020-07-14 10:50:21,194 - trainer - INFO -     val_accuracy   : 0.7997195512820513
+2020-07-14 10:50:21,194 - trainer - INFO -     epoch          : 10
+2020-07-14 10:50:21,194 - trainer - INFO -     accuracy       : 0.9361337746305419
+2020-07-14 10:50:21,194 - trainer - INFO -     val_pred_cost  : 310.21694564819336
+2020-07-14 10:50:21,195 - trainer - INFO -     kl_cost        : 14450.598548626078
+2020-07-14 10:50:21,195 - trainer - INFO -     val_precision  : 0.802612960268393
+2020-07-14 10:50:21,210 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch10.pth ...
+2020-07-14 10:50:21,226 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:51:14,659 - trainer - INFO -     recall         : 0.9417190997107525
+2020-07-14 10:51:14,660 - trainer - INFO -     f1             : 0.9400683079913831
+2020-07-14 10:51:14,660 - trainer - INFO -     val_loss       : 71829.919921875
+2020-07-14 10:51:14,660 - trainer - INFO -     pred_cost      : 61.97123593297498
+2020-07-14 10:51:14,661 - trainer - INFO -     loss           : 14430.813089304957
+2020-07-14 10:51:14,661 - trainer - INFO -     precision      : 0.9444303973969767
+2020-07-14 10:51:14,661 - trainer - INFO -     val_recall     : 0.794518756425198
+2020-07-14 10:51:14,661 - trainer - INFO -     val_f1         : 0.7802495393566954
+2020-07-14 10:51:14,661 - trainer - INFO -     val_kl_cost    : 71505.20963541667
+2020-07-14 10:51:14,662 - trainer - INFO -     val_accuracy   : 0.7900140224358975
+2020-07-14 10:51:14,662 - trainer - INFO -     epoch          : 11
+2020-07-14 10:51:14,662 - trainer - INFO -     accuracy       : 0.9381927339901478
+2020-07-14 10:51:14,662 - trainer - INFO -     val_pred_cost  : 324.7107226053874
+2020-07-14 10:51:14,662 - trainer - INFO -     kl_cost        : 14368.841897898707
+2020-07-14 10:51:14,663 - trainer - INFO -     val_precision  : 0.7964967574270455
+2020-07-14 10:51:14,677 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch11.pth ...
+2020-07-14 10:51:14,694 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:52:07,674 - trainer - INFO -     recall         : 0.9427446636354943
+2020-07-14 10:52:07,675 - trainer - INFO -     f1             : 0.9415418423194388
+2020-07-14 10:52:07,675 - trainer - INFO -     val_loss       : 71400.04231770833
+2020-07-14 10:52:07,675 - trainer - INFO -     pred_cost      : 56.96150464025037
+2020-07-14 10:52:07,675 - trainer - INFO -     loss           : 14341.031468884697
+2020-07-14 10:52:07,675 - trainer - INFO -     precision      : 0.94392257948587
+2020-07-14 10:52:07,676 - trainer - INFO -     val_recall     : 0.7968215821536043
+2020-07-14 10:52:07,676 - trainer - INFO -     val_f1         : 0.7799139449357676
+2020-07-14 10:52:07,676 - trainer - INFO -     val_kl_cost    : 71083.89192708333
+2020-07-14 10:52:07,676 - trainer - INFO -     val_accuracy   : 0.788671875
+2020-07-14 10:52:07,676 - trainer - INFO -     epoch          : 12
+2020-07-14 10:52:07,677 - trainer - INFO -     accuracy       : 0.940309421182266
+2020-07-14 10:52:07,677 - trainer - INFO -     val_pred_cost  : 316.150883992513
+2020-07-14 10:52:07,677 - trainer - INFO -     kl_cost        : 14284.069908405172
+2020-07-14 10:52:07,677 - trainer - INFO -     val_precision  : 0.7963749293837313
+2020-07-14 10:52:07,691 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch12.pth ...
+2020-07-14 10:52:07,708 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:53:00,705 - trainer - INFO -     recall         : 0.9441863900562711
+2020-07-14 10:53:00,706 - trainer - INFO -     f1             : 0.9425228010270359
+2020-07-14 10:53:00,706 - trainer - INFO -     val_loss       : 70950.44921875
+2020-07-14 10:53:00,706 - trainer - INFO -     pred_cost      : 52.16411840504613
+2020-07-14 10:53:00,707 - trainer - INFO -     loss           : 14250.531485721982
+2020-07-14 10:53:00,707 - trainer - INFO -     precision      : 0.9456272319717401
+2020-07-14 10:53:00,707 - trainer - INFO -     val_recall     : 0.8210886357186326
+2020-07-14 10:53:00,707 - trainer - INFO -     val_f1         : 0.8098106301632666
+2020-07-14 10:53:00,707 - trainer - INFO -     val_kl_cost    : 70649.62955729167
+2020-07-14 10:53:00,707 - trainer - INFO -     val_accuracy   : 0.8172576121794872
+2020-07-14 10:53:00,708 - trainer - INFO -     epoch          : 13
+2020-07-14 10:53:00,708 - trainer - INFO -     accuracy       : 0.9398668411330049
+2020-07-14 10:53:00,708 - trainer - INFO -     val_pred_cost  : 300.8199710845947
+2020-07-14 10:53:00,708 - trainer - INFO -     kl_cost        : 14198.367322198275
+2020-07-14 10:53:00,708 - trainer - INFO -     val_precision  : 0.8211624889460803
+2020-07-14 10:53:00,723 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch13.pth ...
+2020-07-14 10:53:00,739 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:53:53,715 - trainer - INFO -     recall         : 0.9462755892143843
+2020-07-14 10:53:53,716 - trainer - INFO -     f1             : 0.9446987406074396
+2020-07-14 10:53:53,716 - trainer - INFO -     val_loss       : 70530.80078125
+2020-07-14 10:53:53,717 - trainer - INFO -     pred_cost      : 50.559863254941746
+2020-07-14 10:53:53,717 - trainer - INFO -     loss           : 14162.233836206897
+2020-07-14 10:53:53,717 - trainer - INFO -     precision      : 0.948171375006975
+2020-07-14 10:53:53,717 - trainer - INFO -     val_recall     : 0.7959580009644882
+2020-07-14 10:53:53,717 - trainer - INFO -     val_f1         : 0.7844959796839118
+2020-07-14 10:53:53,717 - trainer - INFO -     val_kl_cost    : 70211.02018229167
+2020-07-14 10:53:53,718 - trainer - INFO -     val_accuracy   : 0.7952423878205129
+2020-07-14 10:53:53,718 - trainer - INFO -     epoch          : 14
+2020-07-14 10:53:53,718 - trainer - INFO -     accuracy       : 0.9428494458128078
+2020-07-14 10:53:53,718 - trainer - INFO -     val_pred_cost  : 319.78143310546875
+2020-07-14 10:53:53,718 - trainer - INFO -     kl_cost        : 14111.67397966056
+2020-07-14 10:53:53,718 - trainer - INFO -     val_precision  : 0.7932378696061125
+2020-07-14 10:53:53,733 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch14.pth ...
+2020-07-14 10:53:53,750 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:54:47,011 - trainer - INFO -     recall         : 0.9463040601593498
+2020-07-14 10:54:47,012 - trainer - INFO -     f1             : 0.9450504586241676
+2020-07-14 10:54:47,012 - trainer - INFO -     val_loss       : 70094.99674479167
+2020-07-14 10:54:47,013 - trainer - INFO -     pred_cost      : 46.55941127908641
+2020-07-14 10:54:47,013 - trainer - INFO -     loss           : 14070.274834994612
+2020-07-14 10:54:47,013 - trainer - INFO -     precision      : 0.9482408906273997
+2020-07-14 10:54:47,013 - trainer - INFO -     val_recall     : 0.8106682089970177
+2020-07-14 10:54:47,013 - trainer - INFO -     val_f1         : 0.7985807539219151
+2020-07-14 10:54:47,013 - trainer - INFO -     val_kl_cost    : 69768.45833333333
+2020-07-14 10:54:47,014 - trainer - INFO -     val_accuracy   : 0.8069611378205129
+2020-07-14 10:54:47,014 - trainer - INFO -     epoch          : 15
+2020-07-14 10:54:47,014 - trainer - INFO -     accuracy       : 0.9424838362068966
+2020-07-14 10:54:47,014 - trainer - INFO -     val_pred_cost  : 326.5376370747884
+2020-07-14 10:54:47,014 - trainer - INFO -     kl_cost        : 14023.715416217672
+2020-07-14 10:54:47,014 - trainer - INFO -     val_precision  : 0.8098683223882293
+2020-07-14 10:54:47,029 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch15.pth ...
+2020-07-14 10:54:47,046 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:55:40,196 - trainer - INFO -     recall         : 0.9454374604509157
+2020-07-14 10:55:40,197 - trainer - INFO -     f1             : 0.9439277342315991
+2020-07-14 10:55:40,197 - trainer - INFO -     val_loss       : 69643.18098958333
+2020-07-14 10:55:40,197 - trainer - INFO -     pred_cost      : 45.51564752644506
+2020-07-14 10:55:40,197 - trainer - INFO -     loss           : 13979.921134159482
+2020-07-14 10:55:40,197 - trainer - INFO -     precision      : 0.9471083650852374
+2020-07-14 10:55:40,197 - trainer - INFO -     val_recall     : 0.8143408201185219
+2020-07-14 10:55:40,198 - trainer - INFO -     val_f1         : 0.8018811145206971
+2020-07-14 10:55:40,198 - trainer - INFO -     val_kl_cost    : 69318.8125
+2020-07-14 10:55:40,198 - trainer - INFO -     val_accuracy   : 0.8075921474358975
+2020-07-14 10:55:40,198 - trainer - INFO -     epoch          : 16
+2020-07-14 10:55:40,198 - trainer - INFO -     accuracy       : 0.942022013546798
+2020-07-14 10:55:40,198 - trainer - INFO -     val_pred_cost  : 324.3673833211263
+2020-07-14 10:55:40,199 - trainer - INFO -     kl_cost        : 13934.405525996768
+2020-07-14 10:55:40,199 - trainer - INFO -     val_precision  : 0.8115777155320885
+2020-07-14 10:55:40,213 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch16.pth ...
+2020-07-14 10:55:40,230 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:56:33,314 - trainer - INFO -     recall         : 0.945784766226449
+2020-07-14 10:56:33,315 - trainer - INFO -     f1             : 0.9439483990217334
+2020-07-14 10:56:33,315 - trainer - INFO -     val_loss       : 69187.783203125
+2020-07-14 10:56:33,315 - trainer - INFO -     pred_cost      : 44.15689244763605
+2020-07-14 10:56:33,315 - trainer - INFO -     loss           : 13887.909196524784
+2020-07-14 10:56:33,316 - trainer - INFO -     precision      : 0.9463664046102858
+2020-07-14 10:56:33,316 - trainer - INFO -     val_recall     : 0.8097857612205778
+2020-07-14 10:56:33,316 - trainer - INFO -     val_f1         : 0.801174201967518
+2020-07-14 10:56:33,316 - trainer - INFO -     val_kl_cost    : 68864.208984375
+2020-07-14 10:56:33,316 - trainer - INFO -     val_accuracy   : 0.8081430288461539
+2020-07-14 10:56:33,316 - trainer - INFO -     epoch          : 17
+2020-07-14 10:56:33,316 - trainer - INFO -     accuracy       : 0.9418680726600985
+2020-07-14 10:56:33,317 - trainer - INFO -     val_pred_cost  : 323.5739812850952
+2020-07-14 10:56:33,317 - trainer - INFO -     kl_cost        : 13843.752306707975
+2020-07-14 10:56:33,317 - trainer - INFO -     val_precision  : 0.810935037065219
+2020-07-14 10:56:33,331 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch17.pth ...
+2020-07-14 10:56:33,348 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:57:26,030 - trainer - INFO -     recall         : 0.9453068608023326
+2020-07-14 10:57:26,031 - trainer - INFO -     f1             : 0.9441600074234201
+2020-07-14 10:57:26,032 - trainer - INFO -     val_loss       : 68736.24088541667
+2020-07-14 10:57:26,032 - trainer - INFO -     pred_cost      : 44.43413997518605
+2020-07-14 10:57:26,032 - trainer - INFO -     loss           : 13796.886045258621
+2020-07-14 10:57:26,032 - trainer - INFO -     precision      : 0.9471881549947414
+2020-07-14 10:57:26,032 - trainer - INFO -     val_recall     : 0.8107227973201295
+2020-07-14 10:57:26,033 - trainer - INFO -     val_f1         : 0.8003131393910562
+2020-07-14 10:57:26,033 - trainer - INFO -     val_kl_cost    : 68414.734375
+2020-07-14 10:57:26,033 - trainer - INFO -     val_accuracy   : 0.8081029647435898
+2020-07-14 10:57:26,033 - trainer - INFO -     epoch          : 18
+2020-07-14 10:57:26,033 - trainer - INFO -     accuracy       : 0.9419258004926109
+2020-07-14 10:57:26,034 - trainer - INFO -     val_pred_cost  : 321.5068480173747
+2020-07-14 10:57:26,034 - trainer - INFO -     kl_cost        : 13752.451929552803
+2020-07-14 10:57:26,034 - trainer - INFO -     val_precision  : 0.8074124145641685
+2020-07-14 10:57:26,049 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch18.pth ...
+2020-07-14 10:57:26,066 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:58:19,497 - trainer - INFO -     recall         : 0.9465493669409825
+2020-07-14 10:58:19,498 - trainer - INFO -     f1             : 0.9452939689559677
+2020-07-14 10:58:19,499 - trainer - INFO -     val_loss       : 68268.07877604167
+2020-07-14 10:58:19,499 - trainer - INFO -     pred_cost      : 41.64758415879874
+2020-07-14 10:58:19,499 - trainer - INFO -     loss           : 13703.019952182112
+2020-07-14 10:58:19,499 - trainer - INFO -     precision      : 0.9485383778084722
+2020-07-14 10:58:19,499 - trainer - INFO -     val_recall     : 0.8254804119314816
+2020-07-14 10:58:19,500 - trainer - INFO -     val_f1         : 0.8155238497633954
+2020-07-14 10:58:19,500 - trainer - INFO -     val_kl_cost    : 67952.02734375
+2020-07-14 10:58:19,500 - trainer - INFO -     val_accuracy   : 0.8244591346153847
+2020-07-14 10:58:19,500 - trainer - INFO -     epoch          : 19
+2020-07-14 10:58:19,500 - trainer - INFO -     accuracy       : 0.9433689963054187
+2020-07-14 10:58:19,500 - trainer - INFO -     val_pred_cost  : 316.0511957804362
+2020-07-14 10:58:19,501 - trainer - INFO -     kl_cost        : 13661.372390220906
+2020-07-14 10:58:19,501 - trainer - INFO -     val_precision  : 0.8192270168636515
+2020-07-14 10:58:19,515 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch19.pth ...
+2020-07-14 10:58:19,532 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 10:59:12,344 - trainer - INFO -     recall         : 0.9483206843021095
+2020-07-14 10:59:12,345 - trainer - INFO -     f1             : 0.9478352007195459
+2020-07-14 10:59:12,345 - trainer - INFO -     val_loss       : 67837.78515625
+2020-07-14 10:59:12,345 - trainer - INFO -     pred_cost      : 39.56646983376865
+2020-07-14 10:59:12,346 - trainer - INFO -     loss           : 13608.694908405172
+2020-07-14 10:59:12,346 - trainer - INFO -     precision      : 0.9509426956496154
+2020-07-14 10:59:12,346 - trainer - INFO -     val_recall     : 0.8239115757883878
+2020-07-14 10:59:12,346 - trainer - INFO -     val_f1         : 0.8142870202279847
+2020-07-14 10:59:12,346 - trainer - INFO -     val_kl_cost    : 67494.591796875
+2020-07-14 10:59:12,346 - trainer - INFO -     val_accuracy   : 0.8217948717948719
+2020-07-14 10:59:12,347 - trainer - INFO -     epoch          : 20
+2020-07-14 10:59:12,347 - trainer - INFO -     accuracy       : 0.945966748768473
+2020-07-14 10:59:12,347 - trainer - INFO -     val_pred_cost  : 343.19377009073895
+2020-07-14 10:59:12,347 - trainer - INFO -     kl_cost        : 13569.12841796875
+2020-07-14 10:59:12,347 - trainer - INFO -     val_precision  : 0.8213951750043047
+2020-07-14 10:59:12,362 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch20.pth ...
+2020-07-14 10:59:12,378 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:00:05,681 - trainer - INFO -     recall         : 0.9518780175451276
+2020-07-14 11:00:05,682 - trainer - INFO -     f1             : 0.9504125763570425
+2020-07-14 11:00:05,683 - trainer - INFO -     val_loss       : 67379.513671875
+2020-07-14 11:00:05,683 - trainer - INFO -     pred_cost      : 37.9183946806809
+2020-07-14 11:00:05,683 - trainer - INFO -     loss           : 13514.667783539871
+2020-07-14 11:00:05,683 - trainer - INFO -     precision      : 0.952723563711223
+2020-07-14 11:00:05,683 - trainer - INFO -     val_recall     : 0.8144112981439311
+2020-07-14 11:00:05,683 - trainer - INFO -     val_f1         : 0.7970932533169773
+2020-07-14 11:00:05,684 - trainer - INFO -     val_kl_cost    : 67028.763671875
+2020-07-14 11:00:05,684 - trainer - INFO -     val_accuracy   : 0.806209935897436
+2020-07-14 11:00:05,684 - trainer - INFO -     epoch          : 21
+2020-07-14 11:00:05,684 - trainer - INFO -     accuracy       : 0.9477370689655172
+2020-07-14 11:00:05,684 - trainer - INFO -     val_pred_cost  : 350.7499516805013
+2020-07-14 11:00:05,685 - trainer - INFO -     kl_cost        : 13476.749343345906
+2020-07-14 11:00:05,685 - trainer - INFO -     val_precision  : 0.808306045821357
+2020-07-14 11:00:05,700 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch21.pth ...
+2020-07-14 11:00:05,718 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:00:57,598 - trainer - INFO -     recall         : 0.9512856452389161
+2020-07-14 11:00:57,599 - trainer - INFO -     f1             : 0.9510862260145067
+2020-07-14 11:00:57,599 - trainer - INFO -     val_loss       : 66890.87760416667
+2020-07-14 11:00:57,599 - trainer - INFO -     pred_cost      : 38.162592493254564
+2020-07-14 11:00:57,599 - trainer - INFO -     loss           : 13421.111429148707
+2020-07-14 11:00:57,599 - trainer - INFO -     precision      : 0.9540397407778429
+2020-07-14 11:00:57,600 - trainer - INFO -     val_recall     : 0.8233450452449947
+2020-07-14 11:00:57,600 - trainer - INFO -     val_f1         : 0.8096389701826266
+2020-07-14 11:00:57,600 - trainer - INFO -     val_kl_cost    : 66563.09635416667
+2020-07-14 11:00:57,600 - trainer - INFO -     val_accuracy   : 0.819881810897436
+2020-07-14 11:00:57,600 - trainer - INFO -     epoch          : 22
+2020-07-14 11:00:57,600 - trainer - INFO -     accuracy       : 0.9486414716748768
+2020-07-14 11:00:57,601 - trainer - INFO -     val_pred_cost  : 327.7808609008789
+2020-07-14 11:00:57,601 - trainer - INFO -     kl_cost        : 13382.948848329741
+2020-07-14 11:00:57,601 - trainer - INFO -     val_precision  : 0.8176931212881794
+2020-07-14 11:00:57,615 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch22.pth ...
+2020-07-14 11:00:57,631 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:01:49,194 - trainer - INFO -     recall         : 0.950181701316935
+2020-07-14 11:01:49,195 - trainer - INFO -     f1             : 0.9491702070593407
+2020-07-14 11:01:49,195 - trainer - INFO -     val_loss       : 66408.0703125
+2020-07-14 11:01:49,195 - trainer - INFO -     pred_cost      : 43.255885403731774
+2020-07-14 11:01:49,195 - trainer - INFO -     loss           : 13333.555714574353
+2020-07-14 11:01:49,196 - trainer - INFO -     precision      : 0.9514259041985681
+2020-07-14 11:01:49,196 - trainer - INFO -     val_recall     : 0.821358560958222
+2020-07-14 11:01:49,196 - trainer - INFO -     val_f1         : 0.8129569214510974
+2020-07-14 11:01:49,196 - trainer - INFO -     val_kl_cost    : 66098.58072916667
+2020-07-14 11:01:49,196 - trainer - INFO -     val_accuracy   : 0.8186798878205129
+2020-07-14 11:01:49,196 - trainer - INFO -     epoch          : 23
+2020-07-14 11:01:49,197 - trainer - INFO -     accuracy       : 0.9467364532019704
+2020-07-14 11:01:49,197 - trainer - INFO -     val_pred_cost  : 309.49004618326825
+2020-07-14 11:01:49,197 - trainer - INFO -     kl_cost        : 13290.299855199353
+2020-07-14 11:01:49,197 - trainer - INFO -     val_precision  : 0.8195586321769444
+2020-07-14 11:01:49,212 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch23.pth ...
+2020-07-14 11:01:49,228 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:02:40,399 - trainer - INFO -     recall         : 0.9501027163939543
+2020-07-14 11:02:40,400 - trainer - INFO -     f1             : 0.9489876082458923
+2020-07-14 11:02:40,400 - trainer - INFO -     val_loss       : 65992.42447916667
+2020-07-14 11:02:40,400 - trainer - INFO -     pred_cost      : 37.6021365626105
+2020-07-14 11:02:40,401 - trainer - INFO -     loss           : 13235.217470366379
+2020-07-14 11:02:40,401 - trainer - INFO -     precision      : 0.9522134393108909
+2020-07-14 11:02:40,401 - trainer - INFO -     val_recall     : 0.8370407590493011
+2020-07-14 11:02:40,401 - trainer - INFO -     val_f1         : 0.8249322999467519
+2020-07-14 11:02:40,401 - trainer - INFO -     val_kl_cost    : 65635.54231770833
+2020-07-14 11:02:40,401 - trainer - INFO -     val_accuracy   : 0.8334735576923077
+2020-07-14 11:02:40,402 - trainer - INFO -     epoch          : 24
+2020-07-14 11:02:40,402 - trainer - INFO -     accuracy       : 0.9458128078817734
+2020-07-14 11:02:40,402 - trainer - INFO -     val_pred_cost  : 356.8822428385417
+2020-07-14 11:02:40,402 - trainer - INFO -     kl_cost        : 13197.615335398707
+2020-07-14 11:02:40,402 - trainer - INFO -     val_precision  : 0.8302865537151671
+2020-07-14 11:02:40,417 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch24.pth ...
+2020-07-14 11:02:40,433 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:03:31,562 - trainer - INFO -     recall         : 0.9503261169586746
+2020-07-14 11:03:31,563 - trainer - INFO -     f1             : 0.9492894962038781
+2020-07-14 11:03:31,563 - trainer - INFO -     val_loss       : 65536.017578125
+2020-07-14 11:03:31,563 - trainer - INFO -     pred_cost      : 37.92624245018795
+2020-07-14 11:03:31,563 - trainer - INFO -     loss           : 13143.354189116379
+2020-07-14 11:03:31,563 - trainer - INFO -     precision      : 0.9528140579440867
+2020-07-14 11:03:31,564 - trainer - INFO -     val_recall     : 0.8194723586953646
+2020-07-14 11:03:31,564 - trainer - INFO -     val_f1         : 0.8095599434573649
+2020-07-14 11:03:31,564 - trainer - INFO -     val_kl_cost    : 65174.303059895836
+2020-07-14 11:03:31,564 - trainer - INFO -     val_accuracy   : 0.8146734775641026
+2020-07-14 11:03:31,564 - trainer - INFO -     epoch          : 25
+2020-07-14 11:03:31,564 - trainer - INFO -     accuracy       : 0.9463900862068966
+2020-07-14 11:03:31,564 - trainer - INFO -     val_pred_cost  : 361.71392822265625
+2020-07-14 11:03:31,565 - trainer - INFO -     kl_cost        : 13105.427936422413
+2020-07-14 11:03:31,565 - trainer - INFO -     val_precision  : 0.8199840810134363
+2020-07-14 11:03:31,579 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch25.pth ...
+2020-07-14 11:03:31,596 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:04:23,051 - trainer - INFO -     recall         : 0.9522648974402025
+2020-07-14 11:04:23,052 - trainer - INFO -     f1             : 0.950988634029239
+2020-07-14 11:04:23,052 - trainer - INFO -     val_loss       : 65059.791015625
+2020-07-14 11:04:23,052 - trainer - INFO -     pred_cost      : 38.07603041879062
+2020-07-14 11:04:23,052 - trainer - INFO -     loss           : 13050.941473599138
+2020-07-14 11:04:23,053 - trainer - INFO -     precision      : 0.9526824255696217
+2020-07-14 11:04:23,053 - trainer - INFO -     val_recall     : 0.8217538321656731
+2020-07-14 11:04:23,053 - trainer - INFO -     val_f1         : 0.8118398294454899
+2020-07-14 11:04:23,053 - trainer - INFO -     val_kl_cost    : 64712.587239583336
+2020-07-14 11:04:23,053 - trainer - INFO -     val_accuracy   : 0.8167267628205129
+2020-07-14 11:04:23,053 - trainer - INFO -     epoch          : 26
+2020-07-14 11:04:23,054 - trainer - INFO -     accuracy       : 0.9483913177339902
+2020-07-14 11:04:23,054 - trainer - INFO -     val_pred_cost  : 347.20362854003906
+2020-07-14 11:04:23,054 - trainer - INFO -     kl_cost        : 13012.865436422413
+2020-07-14 11:04:23,054 - trainer - INFO -     val_precision  : 0.816686642019429
+2020-07-14 11:04:23,069 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch26.pth ...
+2020-07-14 11:04:23,085 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:05:14,525 - trainer - INFO -     recall         : 0.9529576963440762
+2020-07-14 11:05:14,526 - trainer - INFO -     f1             : 0.951571607178423
+2020-07-14 11:05:14,526 - trainer - INFO -     val_loss       : 64595.040364583336
+2020-07-14 11:05:14,526 - trainer - INFO -     pred_cost      : 37.04994385817955
+2020-07-14 11:05:14,527 - trainer - INFO -     loss           : 12957.436338227371
+2020-07-14 11:05:14,527 - trainer - INFO -     precision      : 0.9537366824639226
+2020-07-14 11:05:14,527 - trainer - INFO -     val_recall     : 0.8190510872708554
+2020-07-14 11:05:14,527 - trainer - INFO -     val_f1         : 0.8099240482715149
+2020-07-14 11:05:14,527 - trainer - INFO -     val_kl_cost    : 64251.2880859375
+2020-07-14 11:05:14,527 - trainer - INFO -     val_accuracy   : 0.8173377403846155
+2020-07-14 11:05:14,528 - trainer - INFO -     epoch          : 27
+2020-07-14 11:05:14,528 - trainer - INFO -     accuracy       : 0.9494111761083744
+2020-07-14 11:05:14,528 - trainer - INFO -     val_pred_cost  : 343.75244522094727
+2020-07-14 11:05:14,528 - trainer - INFO -     kl_cost        : 12920.386415678879
+2020-07-14 11:05:14,528 - trainer - INFO -     val_precision  : 0.815254022791807
+2020-07-14 11:05:14,542 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch27.pth ...
+2020-07-14 11:05:14,559 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:06:09,840 - trainer - INFO -     recall         : 0.95322615146107
+2020-07-14 11:06:09,841 - trainer - INFO -     f1             : 0.9525919432895192
+2020-07-14 11:06:09,841 - trainer - INFO -     val_loss       : 64148.659505208336
+2020-07-14 11:06:09,841 - trainer - INFO -     pred_cost      : 36.773937422653724
+2020-07-14 11:06:09,842 - trainer - INFO -     loss           : 12864.84927262931
+2020-07-14 11:06:09,842 - trainer - INFO -     precision      : 0.9553732348529935
+2020-07-14 11:06:09,842 - trainer - INFO -     val_recall     : 0.8251125571534234
+2020-07-14 11:06:09,842 - trainer - INFO -     val_f1         : 0.8142873652852886
+2020-07-14 11:06:09,842 - trainer - INFO -     val_kl_cost    : 63789.3564453125
+2020-07-14 11:06:09,842 - trainer - INFO -     val_accuracy   : 0.8217948717948719
+2020-07-14 11:06:09,843 - trainer - INFO -     epoch          : 28
+2020-07-14 11:06:09,843 - trainer - INFO -     accuracy       : 0.9500269396551724
+2020-07-14 11:06:09,843 - trainer - INFO -     val_pred_cost  : 359.3031253814697
+2020-07-14 11:06:09,843 - trainer - INFO -     kl_cost        : 12828.075330010775
+2020-07-14 11:06:09,843 - trainer - INFO -     val_precision  : 0.820263895357438
+2020-07-14 11:06:09,859 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch28.pth ...
+2020-07-14 11:06:09,876 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:07:09,448 - trainer - INFO -     recall         : 0.9559019133113414
+2020-07-14 11:07:09,449 - trainer - INFO -     f1             : 0.954883652455141
+2020-07-14 11:07:09,450 - trainer - INFO -     val_loss       : 63691.157552083336
+2020-07-14 11:07:09,450 - trainer - INFO -     pred_cost      : 34.39911566109493
+2020-07-14 11:07:09,450 - trainer - INFO -     loss           : 12769.953091325431
+2020-07-14 11:07:09,450 - trainer - INFO -     precision      : 0.9570213164608422
+2020-07-14 11:07:09,450 - trainer - INFO -     val_recall     : 0.8198709760570116
+2020-07-14 11:07:09,451 - trainer - INFO -     val_f1         : 0.8092897142581926
+2020-07-14 11:07:09,451 - trainer - INFO -     val_kl_cost    : 63334.188151041664
+2020-07-14 11:07:09,451 - trainer - INFO -     val_accuracy   : 0.8172976762820513
+2020-07-14 11:07:09,451 - trainer - INFO -     epoch          : 29
+2020-07-14 11:07:09,452 - trainer - INFO -     accuracy       : 0.95237453817734
+2020-07-14 11:07:09,452 - trainer - INFO -     val_pred_cost  : 356.9691454569499
+2020-07-14 11:07:09,452 - trainer - INFO -     kl_cost        : 12735.553946659482
+2020-07-14 11:07:09,452 - trainer - INFO -     val_precision  : 0.8133785790583105
+2020-07-14 11:07:09,467 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch29.pth ...
+2020-07-14 11:07:09,485 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:08:09,332 - trainer - INFO -     recall         : 0.9529357371465934
+2020-07-14 11:08:09,333 - trainer - INFO -     f1             : 0.9513767916275431
+2020-07-14 11:08:09,333 - trainer - INFO -     val_loss       : 63239.236002604164
+2020-07-14 11:08:09,334 - trainer - INFO -     pred_cost      : 34.10036381359758
+2020-07-14 11:08:09,334 - trainer - INFO -     loss           : 12678.25747575431
+2020-07-14 11:08:09,334 - trainer - INFO -     precision      : 0.9539936424961413
+2020-07-14 11:08:09,334 - trainer - INFO -     val_recall     : 0.8302728927850577
+2020-07-14 11:08:09,335 - trainer - INFO -     val_f1         : 0.8226518070550807
+2020-07-14 11:08:09,335 - trainer - INFO -     val_kl_cost    : 62878.495442708336
+2020-07-14 11:08:09,335 - trainer - INFO -     val_accuracy   : 0.8296073717948719
+2020-07-14 11:08:09,335 - trainer - INFO -     epoch          : 30
+2020-07-14 11:08:09,335 - trainer - INFO -     accuracy       : 0.949045566502463
+2020-07-14 11:08:09,336 - trainer - INFO -     val_pred_cost  : 360.74022547403973
+2020-07-14 11:08:09,336 - trainer - INFO -     kl_cost        : 12644.157108701509
+2020-07-14 11:08:09,336 - trainer - INFO -     val_precision  : 0.8283231177719377
+2020-07-14 11:08:09,351 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch30.pth ...
+2020-07-14 11:08:09,369 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:09:09,483 - trainer - INFO -     recall         : 0.9519500085896939
+2020-07-14 11:09:09,483 - trainer - INFO -     f1             : 0.9509533225184922
+2020-07-14 11:09:09,483 - trainer - INFO -     val_loss       : 62792.974934895836
+2020-07-14 11:09:09,484 - trainer - INFO -     pred_cost      : 38.18088345692075
+2020-07-14 11:09:09,484 - trainer - INFO -     loss           : 12590.691271551725
+2020-07-14 11:09:09,484 - trainer - INFO -     precision      : 0.9540568845683628
+2020-07-14 11:09:09,484 - trainer - INFO -     val_recall     : 0.8289241963787921
+2020-07-14 11:09:09,484 - trainer - INFO -     val_f1         : 0.8190947456899008
+2020-07-14 11:09:09,485 - trainer - INFO -     val_kl_cost    : 62421.056966145836
+2020-07-14 11:09:09,485 - trainer - INFO -     val_accuracy   : 0.8224859775641026
+2020-07-14 11:09:09,485 - trainer - INFO -     epoch          : 31
+2020-07-14 11:09:09,485 - trainer - INFO -     accuracy       : 0.9479294950738917
+2020-07-14 11:09:09,485 - trainer - INFO -     val_pred_cost  : 371.91797892252606
+2020-07-14 11:09:09,486 - trainer - INFO -     kl_cost        : 12552.510422279094
+2020-07-14 11:09:09,486 - trainer - INFO -     val_precision  : 0.8269960890805592
+2020-07-14 11:09:09,501 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch31.pth ...
+2020-07-14 11:09:09,518 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:10:09,235 - trainer - INFO -     recall         : 0.9532011358453047
+2020-07-14 11:10:09,236 - trainer - INFO -     f1             : 0.952239193778408
+2020-07-14 11:10:09,236 - trainer - INFO -     val_loss       : 62333.66796875
+2020-07-14 11:10:09,236 - trainer - INFO -     pred_cost      : 33.03318102606411
+2020-07-14 11:10:09,237 - trainer - INFO -     loss           : 12494.986698545259
+2020-07-14 11:10:09,237 - trainer - INFO -     precision      : 0.9541896795148627
+2020-07-14 11:10:09,237 - trainer - INFO -     val_recall     : 0.8331385597656573
+2020-07-14 11:10:09,237 - trainer - INFO -     val_f1         : 0.824404751056191
+2020-07-14 11:10:09,237 - trainer - INFO -     val_kl_cost    : 61971.607096354164
+2020-07-14 11:10:09,238 - trainer - INFO -     val_accuracy   : 0.8277944711538462
+2020-07-14 11:10:09,238 - trainer - INFO -     epoch          : 32
+2020-07-14 11:10:09,238 - trainer - INFO -     accuracy       : 0.9496998152709359
+2020-07-14 11:10:09,238 - trainer - INFO -     val_pred_cost  : 362.06017303466797
+2020-07-14 11:10:09,238 - trainer - INFO -     kl_cost        : 12461.953478582975
+2020-07-14 11:10:09,238 - trainer - INFO -     val_precision  : 0.8274231447729451
+2020-07-14 11:10:09,254 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch32.pth ...
+2020-07-14 11:10:09,271 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:11:08,970 - trainer - INFO -     recall         : 0.9515766084839201
+2020-07-14 11:11:08,971 - trainer - INFO -     f1             : 0.9511987776180688
+2020-07-14 11:11:08,972 - trainer - INFO -     val_loss       : 61889.1171875
+2020-07-14 11:11:08,972 - trainer - INFO -     pred_cost      : 35.02108619953024
+2020-07-14 11:11:08,972 - trainer - INFO -     loss           : 12406.493837553879
+2020-07-14 11:11:08,972 - trainer - INFO -     precision      : 0.9540077406214728
+2020-07-14 11:11:08,972 - trainer - INFO -     val_recall     : 0.8292974894324505
+2020-07-14 11:11:08,973 - trainer - INFO -     val_f1         : 0.8199134421259671
+2020-07-14 11:11:08,973 - trainer - INFO -     val_kl_cost    : 61523.713216145836
+2020-07-14 11:11:08,973 - trainer - INFO -     val_accuracy   : 0.8263721955128206
+2020-07-14 11:11:08,973 - trainer - INFO -     epoch          : 33
+2020-07-14 11:11:08,973 - trainer - INFO -     accuracy       : 0.9483720751231527
+2020-07-14 11:11:08,974 - trainer - INFO -     val_pred_cost  : 365.40380096435547
+2020-07-14 11:11:08,974 - trainer - INFO -     kl_cost        : 12371.472757273707
+2020-07-14 11:11:08,974 - trainer - INFO -     val_precision  : 0.8263938016006596
+2020-07-14 11:11:08,989 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch33.pth ...
+2020-07-14 11:11:09,006 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:12:08,947 - trainer - INFO -     recall         : 0.9547188440121182
+2020-07-14 11:12:08,948 - trainer - INFO -     f1             : 0.9539103767902448
+2020-07-14 11:12:08,948 - trainer - INFO -     val_loss       : 61459.791015625
+2020-07-14 11:12:08,949 - trainer - INFO -     pred_cost      : 37.653480036505336
+2020-07-14 11:12:08,949 - trainer - INFO -     loss           : 12319.663153286638
+2020-07-14 11:12:08,949 - trainer - INFO -     precision      : 0.9561358864296954
+2020-07-14 11:12:08,949 - trainer - INFO -     val_recall     : 0.8344820023871552
+2020-07-14 11:12:08,949 - trainer - INFO -     val_f1         : 0.8253231682180603
+2020-07-14 11:12:08,950 - trainer - INFO -     val_kl_cost    : 61075.201171875
+2020-07-14 11:12:08,950 - trainer - INFO -     val_accuracy   : 0.8289763621794872
+2020-07-14 11:12:08,950 - trainer - INFO -     epoch          : 34
+2020-07-14 11:12:08,950 - trainer - INFO -     accuracy       : 0.9518357450738917
+2020-07-14 11:12:08,950 - trainer - INFO -     val_pred_cost  : 384.59007771809894
+2020-07-14 11:12:08,950 - trainer - INFO -     kl_cost        : 12282.009664601293
+2020-07-14 11:12:08,951 - trainer - INFO -     val_precision  : 0.8293731166221937
+2020-07-14 11:12:08,967 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch34.pth ...
+2020-07-14 11:12:08,985 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:13:02,076 - trainer - INFO -     recall         : 0.9509905442831607
+2020-07-14 11:13:02,077 - trainer - INFO -     f1             : 0.9501737836910585
+2020-07-14 11:13:02,078 - trainer - INFO -     val_loss       : 61026.395833333336
+2020-07-14 11:13:02,078 - trainer - INFO -     pred_cost      : 34.60235184636609
+2020-07-14 11:13:02,078 - trainer - INFO -     loss           : 12227.968379579741
+2020-07-14 11:13:02,078 - trainer - INFO -     precision      : 0.951938667890817
+2020-07-14 11:13:02,078 - trainer - INFO -     val_recall     : 0.8337384681822742
+2020-07-14 11:13:02,078 - trainer - INFO -     val_f1         : 0.8226334017635022
+2020-07-14 11:13:02,079 - trainer - INFO -     val_kl_cost    : 60638.048502604164
+2020-07-14 11:13:02,079 - trainer - INFO -     val_accuracy   : 0.826943108974359
+2020-07-14 11:13:02,079 - trainer - INFO -     epoch          : 35
+2020-07-14 11:13:02,079 - trainer - INFO -     accuracy       : 0.9481604064039408
+2020-07-14 11:13:02,079 - trainer - INFO -     val_pred_cost  : 388.34712918599445
+2020-07-14 11:13:02,079 - trainer - INFO -     kl_cost        : 12193.366025727371
+2020-07-14 11:13:02,080 - trainer - INFO -     val_precision  : 0.8294388503994766
+2020-07-14 11:13:02,094 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch35.pth ...
+2020-07-14 11:13:02,111 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:13:55,061 - trainer - INFO -     recall         : 0.9530971665627529
+2020-07-14 11:13:55,062 - trainer - INFO -     f1             : 0.9523213413092012
+2020-07-14 11:13:55,062 - trainer - INFO -     val_loss       : 60610.169270833336
+2020-07-14 11:13:55,062 - trainer - INFO -     pred_cost      : 34.226420566953465
+2020-07-14 11:13:55,062 - trainer - INFO -     loss           : 12139.624579067888
+2020-07-14 11:13:55,062 - trainer - INFO -     precision      : 0.9552223219024337
+2020-07-14 11:13:55,063 - trainer - INFO -     val_recall     : 0.8374459803839432
+2020-07-14 11:13:55,063 - trainer - INFO -     val_f1         : 0.8245455177731319
+2020-07-14 11:13:55,063 - trainer - INFO -     val_kl_cost    : 60202.930338541664
+2020-07-14 11:13:55,063 - trainer - INFO -     val_accuracy   : 0.8322516025641026
+2020-07-14 11:13:55,063 - trainer - INFO -     epoch          : 36
+2020-07-14 11:13:55,063 - trainer - INFO -     accuracy       : 0.9498537561576355
+2020-07-14 11:13:55,063 - trainer - INFO -     val_pred_cost  : 407.23841222127277
+2020-07-14 11:13:55,064 - trainer - INFO -     kl_cost        : 12105.398151266163
+2020-07-14 11:13:55,064 - trainer - INFO -     val_precision  : 0.8339512007959623
+2020-07-14 11:13:55,078 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch36.pth ...
+2020-07-14 11:13:55,095 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:14:47,849 - trainer - INFO -     recall         : 0.9541203789598908
+2020-07-14 11:14:47,851 - trainer - INFO -     f1             : 0.9533361714314362
+2020-07-14 11:14:47,851 - trainer - INFO -     val_loss       : 60158.247721354164
+2020-07-14 11:14:47,851 - trainer - INFO -     pred_cost      : 34.7679506005912
+2020-07-14 11:14:47,851 - trainer - INFO -     loss           : 12053.137728987069
+2020-07-14 11:14:47,851 - trainer - INFO -     precision      : 0.9558091271074974
+2020-07-14 11:14:47,852 - trainer - INFO -     val_recall     : 0.8321397618358056
+2020-07-14 11:14:47,852 - trainer - INFO -     val_f1         : 0.8219032204445534
+2020-07-14 11:14:47,852 - trainer - INFO -     val_kl_cost    : 59763.330729166664
+2020-07-14 11:14:47,852 - trainer - INFO -     val_accuracy   : 0.8283253205128206
+2020-07-14 11:14:47,852 - trainer - INFO -     epoch          : 37
+2020-07-14 11:14:47,853 - trainer - INFO -     accuracy       : 0.9504310344827587
+2020-07-14 11:14:47,853 - trainer - INFO -     val_pred_cost  : 394.91686248779297
+2020-07-14 11:14:47,853 - trainer - INFO -     kl_cost        : 12018.369729929957
+2020-07-14 11:14:47,853 - trainer - INFO -     val_precision  : 0.8256881389128043
+2020-07-14 11:14:47,870 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch37.pth ...
+2020-07-14 11:14:47,889 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:15:47,630 - trainer - INFO -     recall         : 0.9537705153367944
+2020-07-14 11:15:47,631 - trainer - INFO -     f1             : 0.9524708250876901
+2020-07-14 11:15:47,631 - trainer - INFO -     val_loss       : 59742.285807291664
+2020-07-14 11:15:47,631 - trainer - INFO -     pred_cost      : 33.91773441742207
+2020-07-14 11:15:47,632 - trainer - INFO -     loss           : 11964.584758890087
+2020-07-14 11:15:47,632 - trainer - INFO -     precision      : 0.9540991538475808
+2020-07-14 11:15:47,632 - trainer - INFO -     val_recall     : 0.8310797904963662
+2020-07-14 11:15:47,632 - trainer - INFO -     val_f1         : 0.8252722356860035
+2020-07-14 11:15:47,632 - trainer - INFO -     val_kl_cost    : 59335.070638020836
+2020-07-14 11:15:47,633 - trainer - INFO -     val_accuracy   : 0.8341646634615385
+2020-07-14 11:15:47,633 - trainer - INFO -     epoch          : 38
+2020-07-14 11:15:47,633 - trainer - INFO -     accuracy       : 0.9501231527093595
+2020-07-14 11:15:47,633 - trainer - INFO -     val_pred_cost  : 407.2149658203125
+2020-07-14 11:15:47,633 - trainer - INFO -     kl_cost        : 11930.6669921875
+2020-07-14 11:15:47,633 - trainer - INFO -     val_precision  : 0.8355480637045031
+2020-07-14 11:15:47,648 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch38.pth ...
+2020-07-14 11:15:47,665 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:16:47,618 - trainer - INFO -     recall         : 0.9508995475570354
+2020-07-14 11:16:47,619 - trainer - INFO -     f1             : 0.9506901092803303
+2020-07-14 11:16:47,619 - trainer - INFO -     val_loss       : 59307.594401041664
+2020-07-14 11:16:47,620 - trainer - INFO -     pred_cost      : 34.74791243980671
+2020-07-14 11:16:47,620 - trainer - INFO -     loss           : 11879.483920393319
+2020-07-14 11:16:47,620 - trainer - INFO -     precision      : 0.9536766779812258
+2020-07-14 11:16:47,620 - trainer - INFO -     val_recall     : 0.8369684275028907
+2020-07-14 11:16:47,620 - trainer - INFO -     val_f1         : 0.8278837091395143
+2020-07-14 11:16:47,621 - trainer - INFO -     val_kl_cost    : 58901.518229166664
+2020-07-14 11:16:47,621 - trainer - INFO -     val_accuracy   : 0.833553685897436
+2020-07-14 11:16:47,621 - trainer - INFO -     epoch          : 39
+2020-07-14 11:16:47,621 - trainer - INFO -     accuracy       : 0.9482566194581281
+2020-07-14 11:16:47,621 - trainer - INFO -     val_pred_cost  : 406.0764389038086
+2020-07-14 11:16:47,621 - trainer - INFO -     kl_cost        : 11844.736025053879
+2020-07-14 11:16:47,622 - trainer - INFO -     val_precision  : 0.8312891539369186
+2020-07-14 11:16:47,637 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch39.pth ...
+2020-07-14 11:16:47,654 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:17:47,300 - trainer - INFO -     recall         : 0.9515001626284669
+2020-07-14 11:17:47,301 - trainer - INFO -     f1             : 0.9510161515588976
+2020-07-14 11:17:47,302 - trainer - INFO -     val_loss       : 58902.344401041664
+2020-07-14 11:17:47,302 - trainer - INFO -     pred_cost      : 33.96691317393862
+2020-07-14 11:17:47,302 - trainer - INFO -     loss           : 11792.841005522629
+2020-07-14 11:17:47,302 - trainer - INFO -     precision      : 0.9535501085226356
+2020-07-14 11:17:47,302 - trainer - INFO -     val_recall     : 0.8452577629281325
+2020-07-14 11:17:47,303 - trainer - INFO -     val_f1         : 0.8327518743675749
+2020-07-14 11:17:47,303 - trainer - INFO -     val_kl_cost    : 58475.998697916664
+2020-07-14 11:17:47,303 - trainer - INFO -     val_accuracy   : 0.8387419871794872
+2020-07-14 11:17:47,303 - trainer - INFO -     epoch          : 40
+2020-07-14 11:17:47,303 - trainer - INFO -     accuracy       : 0.948564501231527
+2020-07-14 11:17:47,303 - trainer - INFO -     val_pred_cost  : 426.3453839619954
+2020-07-14 11:17:47,304 - trainer - INFO -     kl_cost        : 11758.874107623922
+2020-07-14 11:17:47,304 - trainer - INFO -     val_precision  : 0.8359000427010055
+2020-07-14 11:17:47,319 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch40.pth ...
+2020-07-14 11:17:47,336 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:18:47,238 - trainer - INFO -     recall         : 0.9515744142541372
+2020-07-14 11:18:47,239 - trainer - INFO -     f1             : 0.9506521253955904
+2020-07-14 11:18:47,239 - trainer - INFO -     val_loss       : 58473.5185546875
+2020-07-14 11:18:47,240 - trainer - INFO -     pred_cost      : 35.02173019277638
+2020-07-14 11:18:47,240 - trainer - INFO -     loss           : 11708.717689251078
+2020-07-14 11:18:47,240 - trainer - INFO -     precision      : 0.9533709343200786
+2020-07-14 11:18:47,240 - trainer - INFO -     val_recall     : 0.8266057690194694
+2020-07-14 11:18:47,240 - trainer - INFO -     val_f1         : 0.8137424039848854
+2020-07-14 11:18:47,241 - trainer - INFO -     val_kl_cost    : 58049.712239583336
+2020-07-14 11:18:47,241 - trainer - INFO -     val_accuracy   : 0.8225460737179487
+2020-07-14 11:18:47,241 - trainer - INFO -     epoch          : 41
+2020-07-14 11:18:47,241 - trainer - INFO -     accuracy       : 0.947987222906404
+2020-07-14 11:18:47,241 - trainer - INFO -     val_pred_cost  : 423.8062795003255
+2020-07-14 11:18:47,242 - trainer - INFO -     kl_cost        : 11673.695918642241
+2020-07-14 11:18:47,242 - trainer - INFO -     val_precision  : 0.818521550782031
+2020-07-14 11:18:47,257 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch41.pth ...
+2020-07-14 11:18:47,274 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:19:46,975 - trainer - INFO -     recall         : 0.9516468724253832
+2020-07-14 11:19:46,977 - trainer - INFO -     f1             : 0.9508389054583755
+2020-07-14 11:19:46,977 - trainer - INFO -     val_loss       : 58052.796549479164
+2020-07-14 11:19:46,977 - trainer - INFO -     pred_cost      : 36.73204089855326
+2020-07-14 11:19:46,977 - trainer - INFO -     loss           : 11626.212924299569
+2020-07-14 11:19:46,977 - trainer - INFO -     precision      : 0.954855371552694
+2020-07-14 11:19:46,978 - trainer - INFO -     val_recall     : 0.8378190518893271
+2020-07-14 11:19:46,978 - trainer - INFO -     val_f1         : 0.8282530786536384
+2020-07-14 11:19:46,978 - trainer - INFO -     val_kl_cost    : 57633.7333984375
+2020-07-14 11:19:46,978 - trainer - INFO -     val_accuracy   : 0.835526842948718
+2020-07-14 11:19:46,978 - trainer - INFO -     epoch          : 42
+2020-07-14 11:19:46,978 - trainer - INFO -     accuracy       : 0.9491417795566502
+2020-07-14 11:19:46,979 - trainer - INFO -     val_pred_cost  : 419.0627950032552
+2020-07-14 11:19:46,979 - trainer - INFO -     kl_cost        : 11589.480822332975
+2020-07-14 11:19:46,979 - trainer - INFO -     val_precision  : 0.8329650957798101
+2020-07-14 11:19:46,994 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch42.pth ...
+2020-07-14 11:19:47,011 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:20:46,847 - trainer - INFO -     recall         : 0.9540962228354712
+2020-07-14 11:20:46,848 - trainer - INFO -     f1             : 0.9531968312928981
+2020-07-14 11:20:46,848 - trainer - INFO -     val_loss       : 57638.910807291664
+2020-07-14 11:20:46,848 - trainer - INFO -     pred_cost      : 33.87925197338236
+2020-07-14 11:20:46,848 - trainer - INFO -     loss           : 11540.266567887931
+2020-07-14 11:20:46,849 - trainer - INFO -     precision      : 0.9554989382738751
+2020-07-14 11:20:46,849 - trainer - INFO -     val_recall     : 0.8408300751215739
+2020-07-14 11:20:46,849 - trainer - INFO -     val_f1         : 0.8321543268553357
+2020-07-14 11:20:46,849 - trainer - INFO -     val_kl_cost    : 57211.743815104164
+2020-07-14 11:20:46,849 - trainer - INFO -     val_accuracy   : 0.837479967948718
+2020-07-14 11:20:46,850 - trainer - INFO -     epoch          : 43
+2020-07-14 11:20:46,850 - trainer - INFO -     accuracy       : 0.950315578817734
+2020-07-14 11:20:46,850 - trainer - INFO -     val_pred_cost  : 427.16709009806317
+2020-07-14 11:20:46,850 - trainer - INFO -     kl_cost        : 11506.387308054957
+2020-07-14 11:20:46,850 - trainer - INFO -     val_precision  : 0.8339396894330041
+2020-07-14 11:20:46,865 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch43.pth ...
+2020-07-14 11:20:46,883 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:21:46,965 - trainer - INFO -     recall         : 0.9530370252696104
+2020-07-14 11:21:46,966 - trainer - INFO -     f1             : 0.9518373431873893
+2020-07-14 11:21:46,966 - trainer - INFO -     val_loss       : 57240.696614583336
+2020-07-14 11:21:46,966 - trainer - INFO -     pred_cost      : 35.798299049508984
+2020-07-14 11:21:46,966 - trainer - INFO -     loss           : 11458.650356950431
+2020-07-14 11:21:46,966 - trainer - INFO -     precision      : 0.953790417874937
+2020-07-14 11:21:46,966 - trainer - INFO -     val_recall     : 0.8443670730807981
+2020-07-14 11:21:46,966 - trainer - INFO -     val_f1         : 0.8334455660813896
+2020-07-14 11:21:46,967 - trainer - INFO -     val_kl_cost    : 56803.998046875
+2020-07-14 11:21:46,967 - trainer - INFO -     val_accuracy   : 0.8387219551282051
+2020-07-14 11:21:46,967 - trainer - INFO -     epoch          : 44
+2020-07-14 11:21:46,967 - trainer - INFO -     accuracy       : 0.9491802647783251
+2020-07-14 11:21:46,967 - trainer - INFO -     val_pred_cost  : 436.6983273824056
+2020-07-14 11:21:46,967 - trainer - INFO -     kl_cost        : 11422.85205078125
+2020-07-14 11:21:46,967 - trainer - INFO -     val_precision  : 0.8366428306217513
+2020-07-14 11:21:46,975 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch44.pth ...
+2020-07-14 11:21:46,984 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:22:46,786 - trainer - INFO -     recall         : 0.9525882429024655
+2020-07-14 11:22:46,786 - trainer - INFO -     f1             : 0.9518442535912915
+2020-07-14 11:22:46,787 - trainer - INFO -     val_loss       : 56844.152669270836
+2020-07-14 11:22:46,787 - trainer - INFO -     pred_cost      : 34.13721018824084
+2020-07-14 11:22:46,787 - trainer - INFO -     loss           : 11374.710988011853
+2020-07-14 11:22:46,787 - trainer - INFO -     precision      : 0.9545457842853312
+2020-07-14 11:22:46,787 - trainer - INFO -     val_recall     : 0.8382178031463464
+2020-07-14 11:22:46,787 - trainer - INFO -     val_f1         : 0.8275815084849322
+2020-07-14 11:22:46,787 - trainer - INFO -     val_kl_cost    : 56398.544921875
+2020-07-14 11:22:46,787 - trainer - INFO -     val_accuracy   : 0.8361578525641026
+2020-07-14 11:22:46,787 - trainer - INFO -     epoch          : 45
+2020-07-14 11:22:46,787 - trainer - INFO -     accuracy       : 0.9491417795566502
+2020-07-14 11:22:46,787 - trainer - INFO -     val_pred_cost  : 445.6078745524089
+2020-07-14 11:22:46,788 - trainer - INFO -     kl_cost        : 11340.573747306034
+2020-07-14 11:22:46,788 - trainer - INFO -     val_precision  : 0.8275115508820404
+2020-07-14 11:22:46,796 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch45.pth ...
+2020-07-14 11:22:46,804 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:23:46,535 - trainer - INFO -     recall         : 0.9536005528064542
+2020-07-14 11:23:46,536 - trainer - INFO -     f1             : 0.9533519367860002
+2020-07-14 11:23:46,536 - trainer - INFO -     val_loss       : 56460.896158854164
+2020-07-14 11:23:46,536 - trainer - INFO -     pred_cost      : 38.74908231866771
+2020-07-14 11:23:46,536 - trainer - INFO -     loss           : 11298.123282596982
+2020-07-14 11:23:46,536 - trainer - INFO -     precision      : 0.9557659624704222
+2020-07-14 11:23:46,536 - trainer - INFO -     val_recall     : 0.8470461180572628
+2020-07-14 11:23:46,536 - trainer - INFO -     val_f1         : 0.8398791874709416
+2020-07-14 11:23:46,537 - trainer - INFO -     val_kl_cost    : 55995.4716796875
+2020-07-14 11:23:46,537 - trainer - INFO -     val_accuracy   : 0.8458433493589744
+2020-07-14 11:23:46,537 - trainer - INFO -     epoch          : 46
+2020-07-14 11:23:46,537 - trainer - INFO -     accuracy       : 0.9500269396551724
+2020-07-14 11:23:46,537 - trainer - INFO -     val_pred_cost  : 465.42449951171875
+2020-07-14 11:23:46,537 - trainer - INFO -     kl_cost        : 11259.374225484913
+2020-07-14 11:23:46,537 - trainer - INFO -     val_precision  : 0.8449915964711002
+2020-07-14 11:23:46,545 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch46.pth ...
+2020-07-14 11:23:46,554 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:24:42,226 - trainer - INFO -     recall         : 0.9532465347817265
+2020-07-14 11:24:42,227 - trainer - INFO -     f1             : 0.9523158247519515
+2020-07-14 11:24:42,228 - trainer - INFO -     val_loss       : 56070.859700520836
+2020-07-14 11:24:42,228 - trainer - INFO -     pred_cost      : 36.263917133725926
+2020-07-14 11:24:42,228 - trainer - INFO -     loss           : 11215.185260641163
+2020-07-14 11:24:42,228 - trainer - INFO -     precision      : 0.9545769413805899
+2020-07-14 11:24:42,228 - trainer - INFO -     val_recall     : 0.8417889911632784
+2020-07-14 11:24:42,228 - trainer - INFO -     val_f1         : 0.8308197572870157
+2020-07-14 11:24:42,229 - trainer - INFO -     val_kl_cost    : 55593.95703125
+2020-07-14 11:24:42,229 - trainer - INFO -     val_accuracy   : 0.8373998397435898
+2020-07-14 11:24:42,229 - trainer - INFO -     epoch          : 47
+2020-07-14 11:24:42,229 - trainer - INFO -     accuracy       : 0.9496036022167488
+2020-07-14 11:24:42,229 - trainer - INFO -     val_pred_cost  : 476.90309460957843
+2020-07-14 11:24:42,229 - trainer - INFO -     kl_cost        : 11178.921353044181
+2020-07-14 11:24:42,230 - trainer - INFO -     val_precision  : 0.8389740766469868
+2020-07-14 11:24:42,244 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch47.pth ...
+2020-07-14 11:24:42,261 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:25:34,804 - trainer - INFO -     recall         : 0.9549382444819767
+2020-07-14 11:25:34,805 - trainer - INFO -     f1             : 0.9544979564232879
+2020-07-14 11:25:34,805 - trainer - INFO -     val_loss       : 55680.516927083336
+2020-07-14 11:25:34,805 - trainer - INFO -     pred_cost      : 41.373973509361
+2020-07-14 11:25:34,806 - trainer - INFO -     loss           : 11140.881145608837
+2020-07-14 11:25:34,806 - trainer - INFO -     precision      : 0.9565861966910109
+2020-07-14 11:25:34,806 - trainer - INFO -     val_recall     : 0.8409527680920076
+2020-07-14 11:25:34,806 - trainer - INFO -     val_f1         : 0.8323338673984376
+2020-07-14 11:25:34,806 - trainer - INFO -     val_kl_cost    : 55203.751953125
+2020-07-14 11:25:34,806 - trainer - INFO -     val_accuracy   : 0.8380508814102564
+2020-07-14 11:25:34,807 - trainer - INFO -     epoch          : 48
+2020-07-14 11:25:34,807 - trainer - INFO -     accuracy       : 0.9516048337438423
+2020-07-14 11:25:34,807 - trainer - INFO -     val_pred_cost  : 476.7655957539876
+2020-07-14 11:25:34,807 - trainer - INFO -     kl_cost        : 11099.507139008621
+2020-07-14 11:25:34,807 - trainer - INFO -     val_precision  : 0.8360460904628907
+2020-07-14 11:25:34,822 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch48.pth ...
+2020-07-14 11:25:34,839 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:26:27,304 - trainer - INFO -     recall         : 0.9535888664795595
+2020-07-14 11:26:27,305 - trainer - INFO -     f1             : 0.952399036399452
+2020-07-14 11:26:27,306 - trainer - INFO -     val_loss       : 55292.6630859375
+2020-07-14 11:26:27,306 - trainer - INFO -     pred_cost      : 37.38280958964907
+2020-07-14 11:26:27,306 - trainer - INFO -     loss           : 11059.814284752156
+2020-07-14 11:26:27,306 - trainer - INFO -     precision      : 0.9549166236297414
+2020-07-14 11:26:27,306 - trainer - INFO -     val_recall     : 0.8380018562019161
+2020-07-14 11:26:27,306 - trainer - INFO -     val_f1         : 0.8304903452671892
+2020-07-14 11:26:27,307 - trainer - INFO -     val_kl_cost    : 54816.6396484375
+2020-07-14 11:26:27,307 - trainer - INFO -     val_accuracy   : 0.8355669070512821
+2020-07-14 11:26:27,307 - trainer - INFO -     epoch          : 49
+2020-07-14 11:26:27,307 - trainer - INFO -     accuracy       : 0.9496036022167488
+2020-07-14 11:26:27,307 - trainer - INFO -     val_pred_cost  : 476.02429453531903
+2020-07-14 11:26:27,307 - trainer - INFO -     kl_cost        : 11022.431472252156
+2020-07-14 11:26:27,308 - trainer - INFO -     val_precision  : 0.8334434800150502
+2020-07-14 11:26:27,322 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch49.pth ...
+2020-07-14 11:26:27,339 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:27:20,042 - trainer - INFO -     recall         : 0.9519817904180449
+2020-07-14 11:27:20,043 - trainer - INFO -     f1             : 0.9510256972546188
+2020-07-14 11:27:20,043 - trainer - INFO -     val_loss       : 54916.504557291664
+2020-07-14 11:27:20,043 - trainer - INFO -     pred_cost      : 35.56120879074623
+2020-07-14 11:27:20,044 - trainer - INFO -     loss           : 10981.015793372844
+2020-07-14 11:27:20,044 - trainer - INFO -     precision      : 0.9537079510455105
+2020-07-14 11:27:20,044 - trainer - INFO -     val_recall     : 0.8329821874353422
+2020-07-14 11:27:20,044 - trainer - INFO -     val_f1         : 0.821508265217325
+2020-07-14 11:27:20,044 - trainer - INFO -     val_kl_cost    : 54432.275716145836
+2020-07-14 11:27:20,044 - trainer - INFO -     val_accuracy   : 0.8276542467948719
+2020-07-14 11:27:20,045 - trainer - INFO -     epoch          : 50
+2020-07-14 11:27:20,045 - trainer - INFO -     accuracy       : 0.9485260160098522
+2020-07-14 11:27:20,045 - trainer - INFO -     val_pred_cost  : 484.2292620340983
+2020-07-14 11:27:20,045 - trainer - INFO -     kl_cost        : 10945.454606681034
+2020-07-14 11:27:20,045 - trainer - INFO -     val_precision  : 0.8205356520595163
+2020-07-14 11:27:20,060 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch50.pth ...
+2020-07-14 11:27:20,076 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:28:14,939 - trainer - INFO -     recall         : 0.9565708748806779
+2020-07-14 11:28:14,940 - trainer - INFO -     f1             : 0.9554942205581022
+2020-07-14 11:28:14,940 - trainer - INFO -     val_loss       : 54879.474934895836
+2020-07-14 11:28:14,940 - trainer - INFO -     pred_cost      : 32.79580938405004
+2020-07-14 11:28:14,941 - trainer - INFO -     loss           : 10936.476882408406
+2020-07-14 11:28:14,941 - trainer - INFO -     precision      : 0.9580540156813873
+2020-07-14 11:28:14,941 - trainer - INFO -     val_recall     : 0.8407522749007031
+2020-07-14 11:28:14,941 - trainer - INFO -     val_f1         : 0.8319599003246613
+2020-07-14 11:28:14,941 - trainer - INFO -     val_kl_cost    : 54402.24609375
+2020-07-14 11:28:14,941 - trainer - INFO -     val_accuracy   : 0.8387019230769232
+2020-07-14 11:28:14,941 - trainer - INFO -     epoch          : 51
+2020-07-14 11:28:14,942 - trainer - INFO -     accuracy       : 0.9527401477832512
+2020-07-14 11:28:14,942 - trainer - INFO -     val_pred_cost  : 477.22940826416016
+2020-07-14 11:28:14,942 - trainer - INFO -     kl_cost        : 10903.681084994612
+2020-07-14 11:28:14,942 - trainer - INFO -     val_precision  : 0.8338200003868859
+2020-07-14 11:28:14,957 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch51.pth ...
+2020-07-14 11:28:14,974 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:29:07,607 - trainer - INFO -     recall         : 0.9520340438601071
+2020-07-14 11:29:07,608 - trainer - INFO -     f1             : 0.9516389664780225
+2020-07-14 11:29:07,608 - trainer - INFO -     val_loss       : 54856.851888020836
+2020-07-14 11:29:07,609 - trainer - INFO -     pred_cost      : 35.55101753103322
+2020-07-14 11:29:07,609 - trainer - INFO -     loss           : 10931.676690463362
+2020-07-14 11:29:07,609 - trainer - INFO -     precision      : 0.953836706995026
+2020-07-14 11:29:07,609 - trainer - INFO -     val_recall     : 0.8313720565445691
+2020-07-14 11:29:07,609 - trainer - INFO -     val_f1         : 0.8197434202961396
+2020-07-14 11:29:07,609 - trainer - INFO -     val_kl_cost    : 54361.6572265625
+2020-07-14 11:29:07,610 - trainer - INFO -     val_accuracy   : 0.8284054487179487
+2020-07-14 11:29:07,610 - trainer - INFO -     epoch          : 52
+2020-07-14 11:29:07,610 - trainer - INFO -     accuracy       : 0.9495458743842364
+2020-07-14 11:29:07,610 - trainer - INFO -     val_pred_cost  : 495.1946538289388
+2020-07-14 11:29:07,610 - trainer - INFO -     kl_cost        : 10896.125707165947
+2020-07-14 11:29:07,610 - trainer - INFO -     val_precision  : 0.8275092298119953
+2020-07-14 11:29:07,625 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch52.pth ...
+2020-07-14 11:29:07,642 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:30:00,150 - trainer - INFO -     recall         : 0.9571734256891208
+2020-07-14 11:30:00,151 - trainer - INFO -     f1             : 0.9565457565695381
+2020-07-14 11:30:00,151 - trainer - INFO -     val_loss       : 54823.113932291664
+2020-07-14 11:30:00,151 - trainer - INFO -     pred_cost      : 32.76949017623375
+2020-07-14 11:30:00,151 - trainer - INFO -     loss           : 10920.988533809268
+2020-07-14 11:30:00,152 - trainer - INFO -     precision      : 0.9575436924436412
+2020-07-14 11:30:00,152 - trainer - INFO -     val_recall     : 0.8308397797706039
+2020-07-14 11:30:00,152 - trainer - INFO -     val_f1         : 0.8204602377526347
+2020-07-14 11:30:00,152 - trainer - INFO -     val_kl_cost    : 54328.0458984375
+2020-07-14 11:30:00,152 - trainer - INFO -     val_accuracy   : 0.8270432692307693
+2020-07-14 11:30:00,152 - trainer - INFO -     epoch          : 53
+2020-07-14 11:30:00,153 - trainer - INFO -     accuracy       : 0.9539524322660098
+2020-07-14 11:30:00,153 - trainer - INFO -     val_pred_cost  : 495.06811777750653
+2020-07-14 11:30:00,153 - trainer - INFO -     kl_cost        : 10888.21908674569
+2020-07-14 11:30:00,153 - trainer - INFO -     val_precision  : 0.82672923238415
+2020-07-14 11:30:00,168 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch53.pth ...
+2020-07-14 11:30:00,185 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:30:52,726 - trainer - INFO -     recall         : 0.9544673878889222
+2020-07-14 11:30:52,727 - trainer - INFO -     f1             : 0.9537882897902684
+2020-07-14 11:30:52,727 - trainer - INFO -     val_loss       : 54766.118489583336
+2020-07-14 11:30:52,728 - trainer - INFO -     pred_cost      : 32.548492267214016
+2020-07-14 11:30:52,728 - trainer - INFO -     loss           : 10913.612607758621
+2020-07-14 11:30:52,728 - trainer - INFO -     precision      : 0.9560611892239244
+2020-07-14 11:30:52,728 - trainer - INFO -     val_recall     : 0.8516978647925028
+2020-07-14 11:30:52,728 - trainer - INFO -     val_f1         : 0.8420308659507989
+2020-07-14 11:30:52,728 - trainer - INFO -     val_kl_cost    : 54288.928059895836
+2020-07-14 11:30:52,729 - trainer - INFO -     val_accuracy   : 0.8465745192307693
+2020-07-14 11:30:52,729 - trainer - INFO -     epoch          : 54
+2020-07-14 11:30:52,729 - trainer - INFO -     accuracy       : 0.9518357450738917
+2020-07-14 11:30:52,729 - trainer - INFO -     val_pred_cost  : 477.190221786499
+2020-07-14 11:30:52,729 - trainer - INFO -     kl_cost        : 10881.064099542025
+2020-07-14 11:30:52,729 - trainer - INFO -     val_precision  : 0.8434671253577549
+2020-07-14 11:30:52,744 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch54.pth ...
+2020-07-14 11:30:52,761 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:31:45,283 - trainer - INFO -     recall         : 0.9550143079250785
+2020-07-14 11:31:45,284 - trainer - INFO -     f1             : 0.9543566581468087
+2020-07-14 11:31:45,285 - trainer - INFO -     val_loss       : 54719.103841145836
+2020-07-14 11:31:45,285 - trainer - INFO -     pred_cost      : 34.596636361089246
+2020-07-14 11:31:45,285 - trainer - INFO -     loss           : 10907.287193561422
+2020-07-14 11:31:45,285 - trainer - INFO -     precision      : 0.9558080482882746
+2020-07-14 11:31:45,285 - trainer - INFO -     val_recall     : 0.8372333487531552
+2020-07-14 11:31:45,286 - trainer - INFO -     val_f1         : 0.8281760267660422
+2020-07-14 11:31:45,286 - trainer - INFO -     val_kl_cost    : 54249.751627604164
+2020-07-14 11:31:45,286 - trainer - INFO -     val_accuracy   : 0.8362980769230769
+2020-07-14 11:31:45,286 - trainer - INFO -     epoch          : 55
+2020-07-14 11:31:45,286 - trainer - INFO -     accuracy       : 0.9507774014778325
+2020-07-14 11:31:45,286 - trainer - INFO -     val_pred_cost  : 469.35177485148114
+2020-07-14 11:31:45,286 - trainer - INFO -     kl_cost        : 10872.690513873922
+2020-07-14 11:31:45,287 - trainer - INFO -     val_precision  : 0.8324711123003491
+2020-07-14 11:31:45,301 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch55.pth ...
+2020-07-14 11:31:45,318 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:32:37,848 - trainer - INFO -     recall         : 0.954792014381647
+2020-07-14 11:32:37,849 - trainer - INFO -     f1             : 0.9535945727166699
+2020-07-14 11:32:37,850 - trainer - INFO -     val_loss       : 54706.476236979164
+2020-07-14 11:32:37,850 - trainer - INFO -     pred_cost      : 33.589629633673304
+2020-07-14 11:32:37,850 - trainer - INFO -     loss           : 10898.826070851293
+2020-07-14 11:32:37,850 - trainer - INFO -     precision      : 0.9553003595399613
+2020-07-14 11:32:37,850 - trainer - INFO -     val_recall     : 0.8373213483962701
+2020-07-14 11:32:37,850 - trainer - INFO -     val_f1         : 0.8287319396532798
+2020-07-14 11:32:37,851 - trainer - INFO -     val_kl_cost    : 54208.305013020836
+2020-07-14 11:32:37,851 - trainer - INFO -     val_accuracy   : 0.8342247596153847
+2020-07-14 11:32:37,851 - trainer - INFO -     epoch          : 56
+2020-07-14 11:32:37,851 - trainer - INFO -     accuracy       : 0.9505849753694581
+2020-07-14 11:32:37,851 - trainer - INFO -     val_pred_cost  : 498.1714344024658
+2020-07-14 11:32:37,851 - trainer - INFO -     kl_cost        : 10865.236361799569
+2020-07-14 11:32:37,852 - trainer - INFO -     val_precision  : 0.8321008880659567
+2020-07-14 11:32:37,867 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch56.pth ...
+2020-07-14 11:32:37,884 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:33:30,475 - trainer - INFO -     recall         : 0.9514997021748951
+2020-07-14 11:33:30,476 - trainer - INFO -     f1             : 0.9510302898896734
+2020-07-14 11:33:30,476 - trainer - INFO -     val_loss       : 54655.5625
+2020-07-14 11:33:30,476 - trainer - INFO -     pred_cost      : 34.42003371797759
+2020-07-14 11:33:30,477 - trainer - INFO -     loss           : 10892.589439655172
+2020-07-14 11:33:30,477 - trainer - INFO -     precision      : 0.9530268021380018
+2020-07-14 11:33:30,477 - trainer - INFO -     val_recall     : 0.8359859580710104
+2020-07-14 11:33:30,477 - trainer - INFO -     val_f1         : 0.8274333713225919
+2020-07-14 11:33:30,477 - trainer - INFO -     val_kl_cost    : 54175.271158854164
+2020-07-14 11:33:30,477 - trainer - INFO -     val_accuracy   : 0.8366686698717949
+2020-07-14 11:33:30,478 - trainer - INFO -     epoch          : 57
+2020-07-14 11:33:30,478 - trainer - INFO -     accuracy       : 0.9482758620689655
+2020-07-14 11:33:30,478 - trainer - INFO -     val_pred_cost  : 480.29149500528973
+2020-07-14 11:33:30,478 - trainer - INFO -     kl_cost        : 10858.169450431034
+2020-07-14 11:33:30,478 - trainer - INFO -     val_precision  : 0.8294442753642347
+2020-07-14 11:33:30,493 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch57.pth ...
+2020-07-14 11:33:30,510 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:34:23,077 - trainer - INFO -     recall         : 0.9562337873042034
+2020-07-14 11:34:23,079 - trainer - INFO -     f1             : 0.9554722781604836
+2020-07-14 11:34:23,079 - trainer - INFO -     val_loss       : 54615.967447916664
+2020-07-14 11:34:23,079 - trainer - INFO -     pred_cost      : 34.049545534725844
+2020-07-14 11:34:23,079 - trainer - INFO -     loss           : 10884.576104525862
+2020-07-14 11:34:23,079 - trainer - INFO -     precision      : 0.9568783050736065
+2020-07-14 11:34:23,079 - trainer - INFO -     val_recall     : 0.8372310717992302
+2020-07-14 11:34:23,080 - trainer - INFO -     val_f1         : 0.8283188789010699
+2020-07-14 11:34:23,080 - trainer - INFO -     val_kl_cost    : 54136.873697916664
+2020-07-14 11:34:23,080 - trainer - INFO -     val_accuracy   : 0.8361177884615385
+2020-07-14 11:34:23,080 - trainer - INFO -     epoch          : 58
+2020-07-14 11:34:23,080 - trainer - INFO -     accuracy       : 0.9523937807881773
+2020-07-14 11:34:23,080 - trainer - INFO -     val_pred_cost  : 479.09376525878906
+2020-07-14 11:34:23,081 - trainer - INFO -     kl_cost        : 10850.526552397629
+2020-07-14 11:34:23,081 - trainer - INFO -     val_precision  : 0.8305851267126435
+2020-07-14 11:34:23,095 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch58.pth ...
+2020-07-14 11:34:23,112 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:35:17,428 - trainer - INFO -     recall         : 0.9567676544190695
+2020-07-14 11:35:17,430 - trainer - INFO -     f1             : 0.9561001977253377
+2020-07-14 11:35:17,430 - trainer - INFO -     val_loss       : 54602.422526041664
+2020-07-14 11:35:17,430 - trainer - INFO -     pred_cost      : 33.76066324628633
+2020-07-14 11:35:17,430 - trainer - INFO -     loss           : 10876.724087419181
+2020-07-14 11:35:17,430 - trainer - INFO -     precision      : 0.9589110214584546
+2020-07-14 11:35:17,430 - trainer - INFO -     val_recall     : 0.8400463324803004
+2020-07-14 11:35:17,431 - trainer - INFO -     val_f1         : 0.831363341821068
+2020-07-14 11:35:17,431 - trainer - INFO -     val_kl_cost    : 54099.465494791664
+2020-07-14 11:35:17,431 - trainer - INFO -     val_accuracy   : 0.8380308493589744
+2020-07-14 11:35:17,431 - trainer - INFO -     epoch          : 59
+2020-07-14 11:35:17,431 - trainer - INFO -     accuracy       : 0.9537215209359606
+2020-07-14 11:35:17,432 - trainer - INFO -     val_pred_cost  : 502.9569371541341
+2020-07-14 11:35:17,432 - trainer - INFO -     kl_cost        : 10842.963395743534
+2020-07-14 11:35:17,432 - trainer - INFO -     val_precision  : 0.8334294219598387
+2020-07-14 11:35:17,447 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch59.pth ...
+2020-07-14 11:35:17,464 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:36:10,052 - trainer - INFO -     recall         : 0.95424780222834
+2020-07-14 11:36:10,053 - trainer - INFO -     f1             : 0.9533636867297516
+2020-07-14 11:36:10,053 - trainer - INFO -     val_loss       : 54553.902669270836
+2020-07-14 11:36:10,053 - trainer - INFO -     pred_cost      : 35.42835972226899
+2020-07-14 11:36:10,054 - trainer - INFO -     loss           : 10871.481984105603
+2020-07-14 11:36:10,054 - trainer - INFO -     precision      : 0.9559830356470632
+2020-07-14 11:36:10,054 - trainer - INFO -     val_recall     : 0.8349874339659505
+2020-07-14 11:36:10,054 - trainer - INFO -     val_f1         : 0.8249661929732294
+2020-07-14 11:36:10,054 - trainer - INFO -     val_kl_cost    : 54064.087239583336
+2020-07-14 11:36:10,054 - trainer - INFO -     val_accuracy   : 0.8342447916666668
+2020-07-14 11:36:10,055 - trainer - INFO -     epoch          : 60
+2020-07-14 11:36:10,055 - trainer - INFO -     accuracy       : 0.9507966440886699
+2020-07-14 11:36:10,055 - trainer - INFO -     val_pred_cost  : 489.8158950805664
+2020-07-14 11:36:10,055 - trainer - INFO -     kl_cost        : 10836.053609913793
+2020-07-14 11:36:10,055 - trainer - INFO -     val_precision  : 0.8271929201751878
+2020-07-14 11:36:10,070 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch60.pth ...
+2020-07-14 11:36:10,087 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:37:02,529 - trainer - INFO -     recall         : 0.958009175622384
+2020-07-14 11:37:02,530 - trainer - INFO -     f1             : 0.9570799682464561
+2020-07-14 11:37:02,530 - trainer - INFO -     val_loss       : 54527.6474609375
+2020-07-14 11:37:02,530 - trainer - INFO -     pred_cost      : 34.260094461769896
+2020-07-14 11:37:02,530 - trainer - INFO -     loss           : 10862.146484375
+2020-07-14 11:37:02,531 - trainer - INFO -     precision      : 0.9590307053579096
+2020-07-14 11:37:02,531 - trainer - INFO -     val_recall     : 0.845700632598135
+2020-07-14 11:37:02,531 - trainer - INFO -     val_f1         : 0.8348495358132744
+2020-07-14 11:37:02,531 - trainer - INFO -     val_kl_cost    : 54022.78125
+2020-07-14 11:37:02,531 - trainer - INFO -     val_accuracy   : 0.841366185897436
+2020-07-14 11:37:02,532 - trainer - INFO -     epoch          : 61
+2020-07-14 11:37:02,532 - trainer - INFO -     accuracy       : 0.9540486453201971
+2020-07-14 11:37:02,532 - trainer - INFO -     val_pred_cost  : 504.86615498860675
+2020-07-14 11:37:02,532 - trainer - INFO -     kl_cost        : 10827.886415678879
+2020-07-14 11:37:02,532 - trainer - INFO -     val_precision  : 0.8416780415465587
+2020-07-14 11:37:02,548 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch61.pth ...
+2020-07-14 11:37:02,566 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:37:55,515 - trainer - INFO -     recall         : 0.9553992562611966
+2020-07-14 11:37:55,516 - trainer - INFO -     f1             : 0.9549417647630283
+2020-07-14 11:37:55,516 - trainer - INFO -     val_loss       : 54470.597005208336
+2020-07-14 11:37:55,516 - trainer - INFO -     pred_cost      : 33.34654852439617
+2020-07-14 11:37:55,516 - trainer - INFO -     loss           : 10854.151148302803
+2020-07-14 11:37:55,516 - trainer - INFO -     precision      : 0.9568027373244503
+2020-07-14 11:37:55,517 - trainer - INFO -     val_recall     : 0.839472967898308
+2020-07-14 11:37:55,517 - trainer - INFO -     val_f1         : 0.8309478083222809
+2020-07-14 11:37:55,517 - trainer - INFO -     val_kl_cost    : 53989.553059895836
+2020-07-14 11:37:55,517 - trainer - INFO -     val_accuracy   : 0.8380508814102564
+2020-07-14 11:37:55,517 - trainer - INFO -     epoch          : 62
+2020-07-14 11:37:55,517 - trainer - INFO -     accuracy       : 0.9518357450738917
+2020-07-14 11:37:55,518 - trainer - INFO -     val_pred_cost  : 481.04347864786786
+2020-07-14 11:37:55,518 - trainer - INFO -     kl_cost        : 10820.804603313578
+2020-07-14 11:37:55,518 - trainer - INFO -     val_precision  : 0.8345819535766029
+2020-07-14 11:37:55,532 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch62.pth ...
+2020-07-14 11:37:55,549 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:38:48,796 - trainer - INFO -     recall         : 0.9565713152871235
+2020-07-14 11:38:48,797 - trainer - INFO -     f1             : 0.9556371019239771
+2020-07-14 11:38:48,797 - trainer - INFO -     val_loss       : 54434.043294270836
+2020-07-14 11:38:48,797 - trainer - INFO -     pred_cost      : 32.63378379262727
+2020-07-14 11:38:48,797 - trainer - INFO -     loss           : 10846.113904229525
+2020-07-14 11:38:48,797 - trainer - INFO -     precision      : 0.9573385567461873
+2020-07-14 11:38:48,797 - trainer - INFO -     val_recall     : 0.8469630487591698
+2020-07-14 11:38:48,798 - trainer - INFO -     val_f1         : 0.8357693033847541
+2020-07-14 11:38:48,798 - trainer - INFO -     val_kl_cost    : 53949.075846354164
+2020-07-14 11:38:48,798 - trainer - INFO -     val_accuracy   : 0.8400440705128206
+2020-07-14 11:38:48,798 - trainer - INFO -     epoch          : 63
+2020-07-14 11:38:48,798 - trainer - INFO -     accuracy       : 0.9532212130541872
+2020-07-14 11:38:48,798 - trainer - INFO -     val_pred_cost  : 484.96747334798175
+2020-07-14 11:38:48,799 - trainer - INFO -     kl_cost        : 10813.480081492457
+2020-07-14 11:38:48,799 - trainer - INFO -     val_precision  : 0.8397196523174867
+2020-07-14 11:38:48,813 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch63.pth ...
+2020-07-14 11:38:48,830 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:39:43,783 - trainer - INFO -     recall         : 0.9560848352157048
+2020-07-14 11:39:43,784 - trainer - INFO -     f1             : 0.9547006171687803
+2020-07-14 11:39:43,784 - trainer - INFO -     val_loss       : 54424.6240234375
+2020-07-14 11:39:43,784 - trainer - INFO -     pred_cost      : 33.78984947862296
+2020-07-14 11:39:43,785 - trainer - INFO -     loss           : 10839.092554552803
+2020-07-14 11:39:43,785 - trainer - INFO -     precision      : 0.9560960778338186
+2020-07-14 11:39:43,785 - trainer - INFO -     val_recall     : 0.8339505018517173
+2020-07-14 11:39:43,785 - trainer - INFO -     val_f1         : 0.821968963663148
+2020-07-14 11:39:43,785 - trainer - INFO -     val_kl_cost    : 53917.3759765625
+2020-07-14 11:39:43,785 - trainer - INFO -     val_accuracy   : 0.8271233974358975
+2020-07-14 11:39:43,786 - trainer - INFO -     epoch          : 64
+2020-07-14 11:39:43,786 - trainer - INFO -     accuracy       : 0.9514893780788177
+2020-07-14 11:39:43,786 - trainer - INFO -     val_pred_cost  : 507.2484614054362
+2020-07-14 11:39:43,786 - trainer - INFO -     kl_cost        : 10805.302667025862
+2020-07-14 11:39:43,786 - trainer - INFO -     val_precision  : 0.8264225851594548
+2020-07-14 11:39:43,801 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch64.pth ...
+2020-07-14 11:39:43,818 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:40:37,969 - trainer - INFO -     recall         : 0.9548516133050587
+2020-07-14 11:40:37,970 - trainer - INFO -     f1             : 0.9546370436572157
+2020-07-14 11:40:37,970 - trainer - INFO -     val_loss       : 54360.433268229164
+2020-07-14 11:40:37,970 - trainer - INFO -     pred_cost      : 35.48851986589103
+2020-07-14 11:40:37,971 - trainer - INFO -     loss           : 10833.460381869612
+2020-07-14 11:40:37,971 - trainer - INFO -     precision      : 0.9567811116015588
+2020-07-14 11:40:37,971 - trainer - INFO -     val_recall     : 0.8521275256035207
+2020-07-14 11:40:37,971 - trainer - INFO -     val_f1         : 0.8403780119104698
+2020-07-14 11:40:37,971 - trainer - INFO -     val_kl_cost    : 53875.524088541664
+2020-07-14 11:40:37,971 - trainer - INFO -     val_accuracy   : 0.8478565705128206
+2020-07-14 11:40:37,972 - trainer - INFO -     epoch          : 65
+2020-07-14 11:40:37,972 - trainer - INFO -     accuracy       : 0.9519704433497537
+2020-07-14 11:40:37,972 - trainer - INFO -     val_pred_cost  : 484.9093322753906
+2020-07-14 11:40:37,972 - trainer - INFO -     kl_cost        : 10797.971864897629
+2020-07-14 11:40:37,972 - trainer - INFO -     val_precision  : 0.8460638476277825
+2020-07-14 11:40:37,987 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch65.pth ...
+2020-07-14 11:40:38,004 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:41:36,881 - trainer - INFO -     recall         : 0.9560420502893714
+2020-07-14 11:41:36,882 - trainer - INFO -     f1             : 0.954933363950814
+2020-07-14 11:41:36,882 - trainer - INFO -     val_loss       : 54349.0732421875
+2020-07-14 11:41:36,882 - trainer - INFO -     pred_cost      : 35.01795929875867
+2020-07-14 11:41:36,883 - trainer - INFO -     loss           : 10825.550831761853
+2020-07-14 11:41:36,883 - trainer - INFO -     precision      : 0.9566719571045316
+2020-07-14 11:41:36,883 - trainer - INFO -     val_recall     : 0.8503825310979923
+2020-07-14 11:41:36,883 - trainer - INFO -     val_f1         : 0.8416823162949166
+2020-07-14 11:41:36,883 - trainer - INFO -     val_kl_cost    : 53840.436848958336
+2020-07-14 11:41:36,884 - trainer - INFO -     val_accuracy   : 0.8458233173076923
+2020-07-14 11:41:36,884 - trainer - INFO -     epoch          : 66
+2020-07-14 11:41:36,884 - trainer - INFO -     accuracy       : 0.9521821120689655
+2020-07-14 11:41:36,884 - trainer - INFO -     val_pred_cost  : 508.6363665262858
+2020-07-14 11:41:36,884 - trainer - INFO -     kl_cost        : 10790.532900053879
+2020-07-14 11:41:36,884 - trainer - INFO -     val_precision  : 0.845586193194022
+2020-07-14 11:41:36,899 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch66.pth ...
+2020-07-14 11:41:36,917 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:42:39,722 - trainer - INFO -     recall         : 0.9553310004699986
+2020-07-14 11:42:39,724 - trainer - INFO -     f1             : 0.9547586862926541
+2020-07-14 11:42:39,725 - trainer - INFO -     val_loss       : 54284.304036458336
+2020-07-14 11:42:39,725 - trainer - INFO -     pred_cost      : 32.27113833920709
+2020-07-14 11:42:39,725 - trainer - INFO -     loss           : 10815.434738685344
+2020-07-14 11:42:39,725 - trainer - INFO -     precision      : 0.9565184655580212
+2020-07-14 11:42:39,725 - trainer - INFO -     val_recall     : 0.8392528500595423
+2020-07-14 11:42:39,725 - trainer - INFO -     val_f1         : 0.8295245654374922
+2020-07-14 11:42:39,726 - trainer - INFO -     val_kl_cost    : 53801.594075520836
+2020-07-14 11:42:39,726 - trainer - INFO -     val_accuracy   : 0.835526842948718
+2020-07-14 11:42:39,726 - trainer - INFO -     epoch          : 67
+2020-07-14 11:42:39,726 - trainer - INFO -     accuracy       : 0.9525669642857143
+2020-07-14 11:42:39,726 - trainer - INFO -     val_pred_cost  : 482.71030553181964
+2020-07-14 11:42:39,727 - trainer - INFO -     kl_cost        : 10783.163641567888
+2020-07-14 11:42:39,727 - trainer - INFO -     val_precision  : 0.8333608503525216
+2020-07-14 11:42:39,742 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch67.pth ...
+2020-07-14 11:42:39,759 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:43:44,045 - trainer - INFO -     recall         : 0.9574222754916835
+2020-07-14 11:43:44,048 - trainer - INFO -     f1             : 0.9572043366226464
+2020-07-14 11:43:44,048 - trainer - INFO -     val_loss       : 54252.182291666664
+2020-07-14 11:43:44,048 - trainer - INFO -     pred_cost      : 34.77893043386525
+2020-07-14 11:43:44,049 - trainer - INFO -     loss           : 10810.39697265625
+2020-07-14 11:43:44,049 - trainer - INFO -     precision      : 0.9596073115254427
+2020-07-14 11:43:44,049 - trainer - INFO -     val_recall     : 0.8355758137228021
+2020-07-14 11:43:44,049 - trainer - INFO -     val_f1         : 0.8256107481411564
+2020-07-14 11:43:44,049 - trainer - INFO -     val_kl_cost    : 53766.004231770836
+2020-07-14 11:43:44,050 - trainer - INFO -     val_accuracy   : 0.8367688301282051
+2020-07-14 11:43:44,050 - trainer - INFO -     epoch          : 68
+2020-07-14 11:43:44,050 - trainer - INFO -     accuracy       : 0.9548760775862069
+2020-07-14 11:43:44,050 - trainer - INFO -     val_pred_cost  : 486.17836634318036
+2020-07-14 11:43:44,050 - trainer - INFO -     kl_cost        : 10775.61801252694
+2020-07-14 11:43:44,051 - trainer - INFO -     val_precision  : 0.8301023067591817
+2020-07-14 11:43:44,071 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch68.pth ...
+2020-07-14 11:43:44,088 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:44:40,142 - trainer - INFO -     recall         : 0.9544156198838607
+2020-07-14 11:44:40,143 - trainer - INFO -     f1             : 0.9541487551694334
+2020-07-14 11:44:40,144 - trainer - INFO -     val_loss       : 54227.0322265625
+2020-07-14 11:44:40,144 - trainer - INFO -     pred_cost      : 33.77804675595514
+2020-07-14 11:44:40,144 - trainer - INFO -     loss           : 10801.982825969828
+2020-07-14 11:44:40,144 - trainer - INFO -     precision      : 0.9567824994928164
+2020-07-14 11:44:40,144 - trainer - INFO -     val_recall     : 0.8408850986207624
+2020-07-14 11:44:40,145 - trainer - INFO -     val_f1         : 0.8299184759422258
+2020-07-14 11:44:40,145 - trainer - INFO -     val_kl_cost    : 53726.049153645836
+2020-07-14 11:44:40,145 - trainer - INFO -     val_accuracy   : 0.8361979166666668
+2020-07-14 11:44:40,145 - trainer - INFO -     epoch          : 69
+2020-07-14 11:44:40,145 - trainer - INFO -     accuracy       : 0.9518742302955665
+2020-07-14 11:44:40,145 - trainer - INFO -     val_pred_cost  : 500.98285420735675
+2020-07-14 11:44:40,146 - trainer - INFO -     kl_cost        : 10768.20474137931
+2020-07-14 11:44:40,146 - trainer - INFO -     val_precision  : 0.8305155545839483
+2020-07-14 11:44:40,161 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch69.pth ...
+2020-07-14 11:44:40,178 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:45:35,598 - trainer - INFO -     recall         : 0.9555420922247684
+2020-07-14 11:45:35,599 - trainer - INFO -     f1             : 0.9553322356341951
+2020-07-14 11:45:35,600 - trainer - INFO -     val_loss       : 54181.534505208336
+2020-07-14 11:45:35,600 - trainer - INFO -     pred_cost      : 34.683081026734975
+2020-07-14 11:45:35,600 - trainer - INFO -     loss           : 10794.944049703663
+2020-07-14 11:45:35,600 - trainer - INFO -     precision      : 0.9577067792096485
+2020-07-14 11:45:35,600 - trainer - INFO -     val_recall     : 0.8266709340797105
+2020-07-14 11:45:35,601 - trainer - INFO -     val_f1         : 0.8186616589789385
+2020-07-14 11:45:35,601 - trainer - INFO -     val_kl_cost    : 53689.013020833336
+2020-07-14 11:45:35,601 - trainer - INFO -     val_accuracy   : 0.8256810897435898
+2020-07-14 11:45:35,601 - trainer - INFO -     epoch          : 70
+2020-07-14 11:45:35,601 - trainer - INFO -     accuracy       : 0.9526439347290641
+2020-07-14 11:45:35,602 - trainer - INFO -     val_pred_cost  : 492.52151743570965
+2020-07-14 11:45:35,602 - trainer - INFO -     kl_cost        : 10760.261011584053
+2020-07-14 11:45:35,602 - trainer - INFO -     val_precision  : 0.8216434562425453
+2020-07-14 11:45:35,617 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch70.pth ...
+2020-07-14 11:45:35,634 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:46:31,139 - trainer - INFO -     recall         : 0.9523694043557682
+2020-07-14 11:46:31,140 - trainer - INFO -     f1             : 0.9518823461787365
+2020-07-14 11:46:31,140 - trainer - INFO -     val_loss       : 54145.506510416664
+2020-07-14 11:46:31,141 - trainer - INFO -     pred_cost      : 33.09698106502665
+2020-07-14 11:46:31,141 - trainer - INFO -     loss           : 10786.487271012931
+2020-07-14 11:46:31,141 - trainer - INFO -     precision      : 0.9542584284351984
+2020-07-14 11:46:31,141 - trainer - INFO -     val_recall     : 0.8411013446663982
+2020-07-14 11:46:31,141 - trainer - INFO -     val_f1         : 0.834369281397734
+2020-07-14 11:46:31,142 - trainer - INFO -     val_kl_cost    : 53653.029622395836
+2020-07-14 11:46:31,142 - trainer - INFO -     val_accuracy   : 0.841366185897436
+2020-07-14 11:46:31,142 - trainer - INFO -     epoch          : 71
+2020-07-14 11:46:31,142 - trainer - INFO -     accuracy       : 0.9494496613300492
+2020-07-14 11:46:31,142 - trainer - INFO -     val_pred_cost  : 492.4769592285156
+2020-07-14 11:46:31,143 - trainer - INFO -     kl_cost        : 10753.390321928879
+2020-07-14 11:46:31,143 - trainer - INFO -     val_precision  : 0.8375900954773946
+2020-07-14 11:46:31,158 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch71.pth ...
+2020-07-14 11:46:31,175 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:47:27,283 - trainer - INFO -     recall         : 0.9573313542898528
+2020-07-14 11:47:27,284 - trainer - INFO -     f1             : 0.9566075465475294
+2020-07-14 11:47:27,284 - trainer - INFO -     val_loss       : 54102.1318359375
+2020-07-14 11:47:27,285 - trainer - INFO -     pred_cost      : 33.28351083295099
+2020-07-14 11:47:27,285 - trainer - INFO -     loss           : 10779.451879040947
+2020-07-14 11:47:27,285 - trainer - INFO -     precision      : 0.9585378895773676
+2020-07-14 11:47:27,285 - trainer - INFO -     val_recall     : 0.8352338383749416
+2020-07-14 11:47:27,285 - trainer - INFO -     val_f1         : 0.8244189243086013
+2020-07-14 11:47:27,285 - trainer - INFO -     val_kl_cost    : 53615.58203125
+2020-07-14 11:47:27,286 - trainer - INFO -     val_accuracy   : 0.829667467948718
+2020-07-14 11:47:27,286 - trainer - INFO -     epoch          : 72
+2020-07-14 11:47:27,286 - trainer - INFO -     accuracy       : 0.9537215209359606
+2020-07-14 11:47:27,286 - trainer - INFO -     val_pred_cost  : 486.5502395629883
+2020-07-14 11:47:27,286 - trainer - INFO -     kl_cost        : 10746.168372844828
+2020-07-14 11:47:27,286 - trainer - INFO -     val_precision  : 0.8289714765810853
+2020-07-14 11:47:27,311 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch72.pth ...
+2020-07-14 11:47:27,344 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:48:23,157 - trainer - INFO -     recall         : 0.9564153405123907
+2020-07-14 11:48:23,158 - trainer - INFO -     f1             : 0.9558857233870677
+2020-07-14 11:48:23,158 - trainer - INFO -     val_loss       : 54081.033203125
+2020-07-14 11:48:23,159 - trainer - INFO -     pred_cost      : 34.468020282942675
+2020-07-14 11:48:23,159 - trainer - INFO -     loss           : 10772.867019127156
+2020-07-14 11:48:23,159 - trainer - INFO -     precision      : 0.9578739305819313
+2020-07-14 11:48:23,159 - trainer - INFO -     val_recall     : 0.8400098043555317
+2020-07-14 11:48:23,159 - trainer - INFO -     val_f1         : 0.8309990139216635
+2020-07-14 11:48:23,159 - trainer - INFO -     val_kl_cost    : 53581.926106770836
+2020-07-14 11:48:23,160 - trainer - INFO -     val_accuracy   : 0.8348958333333334
+2020-07-14 11:48:23,160 - trainer - INFO -     epoch          : 73
+2020-07-14 11:48:23,160 - trainer - INFO -     accuracy       : 0.9530095443349753
+2020-07-14 11:48:23,160 - trainer - INFO -     val_pred_cost  : 499.1066258748372
+2020-07-14 11:48:23,160 - trainer - INFO -     kl_cost        : 10738.398942618534
+2020-07-14 11:48:23,160 - trainer - INFO -     val_precision  : 0.8348610400310896
+2020-07-14 11:48:23,175 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch73.pth ...
+2020-07-14 11:48:23,192 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:49:19,070 - trainer - INFO -     recall         : 0.9565479449828298
+2020-07-14 11:49:19,072 - trainer - INFO -     f1             : 0.9554877078464739
+2020-07-14 11:49:19,072 - trainer - INFO -     val_loss       : 54040.6259765625
+2020-07-14 11:49:19,072 - trainer - INFO -     pred_cost      : 35.21542031189491
+2020-07-14 11:49:19,072 - trainer - INFO -     loss           : 10766.404498922413
+2020-07-14 11:49:19,072 - trainer - INFO -     precision      : 0.9574788448997402
+2020-07-14 11:49:19,072 - trainer - INFO -     val_recall     : 0.8367388707222793
+2020-07-14 11:49:19,073 - trainer - INFO -     val_f1         : 0.828805628131402
+2020-07-14 11:49:19,073 - trainer - INFO -     val_kl_cost    : 53543.021158854164
+2020-07-14 11:49:19,073 - trainer - INFO -     val_accuracy   : 0.8342447916666668
+2020-07-14 11:49:19,073 - trainer - INFO -     epoch          : 74
+2020-07-14 11:49:19,073 - trainer - INFO -     accuracy       : 0.9528940886699508
+2020-07-14 11:49:19,073 - trainer - INFO -     val_pred_cost  : 497.6049156188965
+2020-07-14 11:49:19,074 - trainer - INFO -     kl_cost        : 10731.189082704741
+2020-07-14 11:49:19,074 - trainer - INFO -     val_precision  : 0.8318334814945553
+2020-07-14 11:49:19,088 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch74.pth ...
+2020-07-14 11:49:19,105 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:50:13,547 - trainer - INFO -     recall         : 0.9560531774956273
+2020-07-14 11:50:13,548 - trainer - INFO -     f1             : 0.9548756482237433
+2020-07-14 11:50:13,548 - trainer - INFO -     val_loss       : 54003.293294270836
+2020-07-14 11:50:13,548 - trainer - INFO -     pred_cost      : 34.164651739186255
+2020-07-14 11:50:13,548 - trainer - INFO -     loss           : 10757.759529903018
+2020-07-14 11:50:13,549 - trainer - INFO -     precision      : 0.9560424655137286
+2020-07-14 11:50:13,549 - trainer - INFO -     val_recall     : 0.8421221681759148
+2020-07-14 11:50:13,549 - trainer - INFO -     val_f1         : 0.8345122511510579
+2020-07-14 11:50:13,549 - trainer - INFO -     val_kl_cost    : 53505.924153645836
+2020-07-14 11:50:13,549 - trainer - INFO -     val_accuracy   : 0.8386818910256411
+2020-07-14 11:50:13,549 - trainer - INFO -     epoch          : 75
+2020-07-14 11:50:13,549 - trainer - INFO -     accuracy       : 0.9520666564039408
+2020-07-14 11:50:13,550 - trainer - INFO -     val_pred_cost  : 497.36927286783856
+2020-07-14 11:50:13,550 - trainer - INFO -     kl_cost        : 10723.594844423491
+2020-07-14 11:50:13,550 - trainer - INFO -     val_precision  : 0.8374703513857393
+2020-07-14 11:50:13,564 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch75.pth ...
+2020-07-14 11:50:13,581 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:51:09,705 - trainer - INFO -     recall         : 0.9577583713356549
+2020-07-14 11:51:09,705 - trainer - INFO -     f1             : 0.957294471470603
+2020-07-14 11:51:09,706 - trainer - INFO -     val_loss       : 53963.814127604164
+2020-07-14 11:51:09,706 - trainer - INFO -     pred_cost      : 33.3657944449063
+2020-07-14 11:51:09,706 - trainer - INFO -     loss           : 10749.914820177803
+2020-07-14 11:51:09,706 - trainer - INFO -     precision      : 0.9588222234953381
+2020-07-14 11:51:09,706 - trainer - INFO -     val_recall     : 0.8412050481076941
+2020-07-14 11:51:09,707 - trainer - INFO -     val_f1         : 0.8316773118779004
+2020-07-14 11:51:09,707 - trainer - INFO -     val_kl_cost    : 53472.818684895836
+2020-07-14 11:51:09,707 - trainer - INFO -     val_accuracy   : 0.8407151442307693
+2020-07-14 11:51:09,707 - trainer - INFO -     epoch          : 76
+2020-07-14 11:51:09,707 - trainer - INFO -     accuracy       : 0.9547606219211823
+2020-07-14 11:51:09,707 - trainer - INFO -     val_pred_cost  : 490.994935353597
+2020-07-14 11:51:09,708 - trainer - INFO -     kl_cost        : 10716.549030172413
+2020-07-14 11:51:09,708 - trainer - INFO -     val_precision  : 0.8342193506277392
+2020-07-14 11:51:09,722 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch76.pth ...
+2020-07-14 11:51:09,739 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:52:04,956 - trainer - INFO -     recall         : 0.9556906571232812
+2020-07-14 11:52:04,957 - trainer - INFO -     f1             : 0.9544730156292979
+2020-07-14 11:52:04,958 - trainer - INFO -     val_loss       : 53929.566731770836
+2020-07-14 11:52:04,958 - trainer - INFO -     pred_cost      : 34.50362027924636
+2020-07-14 11:52:04,958 - trainer - INFO -     loss           : 10743.502609779094
+2020-07-14 11:52:04,958 - trainer - INFO -     precision      : 0.9562933105289825
+2020-07-14 11:52:04,958 - trainer - INFO -     val_recall     : 0.8473773223779092
+2020-07-14 11:52:04,958 - trainer - INFO -     val_f1         : 0.8381547178511976
+2020-07-14 11:52:04,959 - trainer - INFO -     val_kl_cost    : 53430.681640625
+2020-07-14 11:52:04,959 - trainer - INFO -     val_accuracy   : 0.8458633814102564
+2020-07-14 11:52:04,959 - trainer - INFO -     epoch          : 77
+2020-07-14 11:52:04,959 - trainer - INFO -     accuracy       : 0.9521051416256158
+2020-07-14 11:52:04,959 - trainer - INFO -     val_pred_cost  : 498.8849105834961
+2020-07-14 11:52:04,959 - trainer - INFO -     kl_cost        : 10708.998989762931
+2020-07-14 11:52:04,960 - trainer - INFO -     val_precision  : 0.8405258166867262
+2020-07-14 11:52:04,974 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch77.pth ...
+2020-07-14 11:52:04,991 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:52:59,698 - trainer - INFO -     recall         : 0.9537326874208065
+2020-07-14 11:52:59,702 - trainer - INFO -     f1             : 0.9533429669191401
+2020-07-14 11:52:59,702 - trainer - INFO -     val_loss       : 53887.123372395836
+2020-07-14 11:52:59,702 - trainer - INFO -     pred_cost      : 34.11325589541731
+2020-07-14 11:52:59,702 - trainer - INFO -     loss           : 10736.292733028018
+2020-07-14 11:52:59,703 - trainer - INFO -     precision      : 0.9555009152505186
+2020-07-14 11:52:59,703 - trainer - INFO -     val_recall     : 0.8474617687045302
+2020-07-14 11:52:59,703 - trainer - INFO -     val_f1         : 0.8391672523684176
+2020-07-14 11:52:59,703 - trainer - INFO -     val_kl_cost    : 53394.972981770836
+2020-07-14 11:52:59,703 - trainer - INFO -     val_accuracy   : 0.8439102564102564
+2020-07-14 11:52:59,703 - trainer - INFO -     epoch          : 78
+2020-07-14 11:52:59,704 - trainer - INFO -     accuracy       : 0.9511237684729064
+2020-07-14 11:52:59,704 - trainer - INFO -     val_pred_cost  : 492.1500822703044
+2020-07-14 11:52:59,704 - trainer - INFO -     kl_cost        : 10702.179485452587
+2020-07-14 11:52:59,706 - trainer - INFO -     val_precision  : 0.8412184943887375
+2020-07-14 11:52:59,736 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch78.pth ...
+2020-07-14 11:52:59,772 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:53:54,232 - trainer - INFO -     recall         : 0.9568976515588744
+2020-07-14 11:53:54,232 - trainer - INFO -     f1             : 0.956236592594258
+2020-07-14 11:53:54,233 - trainer - INFO -     val_loss       : 53855.466471354164
+2020-07-14 11:53:54,233 - trainer - INFO -     pred_cost      : 34.945840260078164
+2020-07-14 11:53:54,233 - trainer - INFO -     loss           : 10729.322198275862
+2020-07-14 11:53:54,233 - trainer - INFO -     precision      : 0.9585809587022738
+2020-07-14 11:53:54,233 - trainer - INFO -     val_recall     : 0.8484650305653271
+2020-07-14 11:53:54,233 - trainer - INFO -     val_f1         : 0.8394273058437939
+2020-07-14 11:53:54,234 - trainer - INFO -     val_kl_cost    : 53361.353190104164
+2020-07-14 11:53:54,234 - trainer - INFO -     val_accuracy   : 0.8452323717948719
+2020-07-14 11:53:54,234 - trainer - INFO -     epoch          : 79
+2020-07-14 11:53:54,234 - trainer - INFO -     accuracy       : 0.9540294027093595
+2020-07-14 11:53:54,234 - trainer - INFO -     val_pred_cost  : 494.1136411031087
+2020-07-14 11:53:54,234 - trainer - INFO -     kl_cost        : 10694.376363820043
+2020-07-14 11:53:54,234 - trainer - INFO -     val_precision  : 0.8412376996948069
+2020-07-14 11:53:54,247 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch79.pth ...
+2020-07-14 11:53:54,262 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:54:47,292 - trainer - INFO -     recall         : 0.9545275861173712
+2020-07-14 11:54:47,294 - trainer - INFO -     f1             : 0.9540115500135155
+2020-07-14 11:54:47,294 - trainer - INFO -     val_loss       : 53834.178385416664
+2020-07-14 11:54:47,294 - trainer - INFO -     pred_cost      : 32.99931753092799
+2020-07-14 11:54:47,294 - trainer - INFO -     loss           : 10720.03564453125
+2020-07-14 11:54:47,295 - trainer - INFO -     precision      : 0.9564336578947773
+2020-07-14 11:54:47,295 - trainer - INFO -     val_recall     : 0.8563873790960828
+2020-07-14 11:54:47,295 - trainer - INFO -     val_f1         : 0.8461247647765773
+2020-07-14 11:54:47,295 - trainer - INFO -     val_kl_cost    : 53324.145833333336
+2020-07-14 11:54:47,295 - trainer - INFO -     val_accuracy   : 0.8490384615384615
+2020-07-14 11:54:47,295 - trainer - INFO -     epoch          : 80
+2020-07-14 11:54:47,296 - trainer - INFO -     accuracy       : 0.9519896859605911
+2020-07-14 11:54:47,296 - trainer - INFO -     val_pred_cost  : 510.0327212015788
+2020-07-14 11:54:47,296 - trainer - INFO -     kl_cost        : 10687.036318022629
+2020-07-14 11:54:47,296 - trainer - INFO -     val_precision  : 0.8474104275449044
+2020-07-14 11:54:47,313 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch80.pth ...
+2020-07-14 11:54:47,332 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:55:39,067 - trainer - INFO -     recall         : 0.9555911601214029
+2020-07-14 11:55:39,068 - trainer - INFO -     f1             : 0.9551315926223969
+2020-07-14 11:55:39,068 - trainer - INFO -     val_loss       : 53778.360026041664
+2020-07-14 11:55:39,069 - trainer - INFO -     pred_cost      : 33.10659002435619
+2020-07-14 11:55:39,069 - trainer - INFO -     loss           : 10713.12173356681
+2020-07-14 11:55:39,069 - trainer - INFO -     precision      : 0.9569938406040492
+2020-07-14 11:55:39,069 - trainer - INFO -     val_recall     : 0.8405468758389768
+2020-07-14 11:55:39,069 - trainer - INFO -     val_f1         : 0.8323600429883594
+2020-07-14 11:55:39,069 - trainer - INFO -     val_kl_cost    : 53288.039388020836
+2020-07-14 11:55:39,070 - trainer - INFO -     val_accuracy   : 0.8361778846153847
+2020-07-14 11:55:39,070 - trainer - INFO -     epoch          : 81
+2020-07-14 11:55:39,070 - trainer - INFO -     accuracy       : 0.95237453817734
+2020-07-14 11:55:39,070 - trainer - INFO -     val_pred_cost  : 490.32018915812176
+2020-07-14 11:55:39,070 - trainer - INFO -     kl_cost        : 10680.01513671875
+2020-07-14 11:55:39,070 - trainer - INFO -     val_precision  : 0.8369298009368814
+2020-07-14 11:55:39,085 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch81.pth ...
+2020-07-14 11:55:39,102 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:56:30,627 - trainer - INFO -     recall         : 0.9555391485601302
+2020-07-14 11:56:30,629 - trainer - INFO -     f1             : 0.9548739526493905
+2020-07-14 11:56:30,629 - trainer - INFO -     val_loss       : 53728.822591145836
+2020-07-14 11:56:30,629 - trainer - INFO -     pred_cost      : 34.346582396277064
+2020-07-14 11:56:30,630 - trainer - INFO -     loss           : 10707.088328394397
+2020-07-14 11:56:30,630 - trainer - INFO -     precision      : 0.9566205365009337
+2020-07-14 11:56:30,630 - trainer - INFO -     val_recall     : 0.8517350814626593
+2020-07-14 11:56:30,630 - trainer - INFO -     val_f1         : 0.8427926391984109
+2020-07-14 11:56:30,630 - trainer - INFO -     val_kl_cost    : 53249.8564453125
+2020-07-14 11:56:30,630 - trainer - INFO -     val_accuracy   : 0.8477564102564102
+2020-07-14 11:56:30,631 - trainer - INFO -     epoch          : 82
+2020-07-14 11:56:30,631 - trainer - INFO -     accuracy       : 0.9526631773399015
+2020-07-14 11:56:30,631 - trainer - INFO -     val_pred_cost  : 478.9662501017253
+2020-07-14 11:56:30,631 - trainer - INFO -     kl_cost        : 10672.741749730603
+2020-07-14 11:56:30,631 - trainer - INFO -     val_precision  : 0.8465820448025542
+2020-07-14 11:56:30,651 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch82.pth ...
+2020-07-14 11:56:30,668 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:57:22,458 - trainer - INFO -     recall         : 0.9563807133529226
+2020-07-14 11:57:22,459 - trainer - INFO -     f1             : 0.9557689252430496
+2020-07-14 11:57:22,459 - trainer - INFO -     val_loss       : 53717.384440104164
+2020-07-14 11:57:22,460 - trainer - INFO -     pred_cost      : 33.98770685853629
+2020-07-14 11:57:22,460 - trainer - INFO -     loss           : 10698.846814385775
+2020-07-14 11:57:22,460 - trainer - INFO -     precision      : 0.9571440788777906
+2020-07-14 11:57:22,460 - trainer - INFO -     val_recall     : 0.8488195429098643
+2020-07-14 11:57:22,460 - trainer - INFO -     val_f1         : 0.8389445880525694
+2020-07-14 11:57:22,461 - trainer - INFO -     val_kl_cost    : 53216.462239583336
+2020-07-14 11:57:22,461 - trainer - INFO -     val_accuracy   : 0.8432992788461539
+2020-07-14 11:57:22,461 - trainer - INFO -     epoch          : 83
+2020-07-14 11:57:22,461 - trainer - INFO -     accuracy       : 0.9531057573891626
+2020-07-14 11:57:22,461 - trainer - INFO -     val_pred_cost  : 500.9222946166992
+2020-07-14 11:57:22,461 - trainer - INFO -     kl_cost        : 10664.859139278018
+2020-07-14 11:57:22,462 - trainer - INFO -     val_precision  : 0.8411486573186601
+2020-07-14 11:57:22,476 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch83.pth ...
+2020-07-14 11:57:22,493 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:58:14,084 - trainer - INFO -     recall         : 0.9561361687142079
+2020-07-14 11:58:14,085 - trainer - INFO -     f1             : 0.9557028103906419
+2020-07-14 11:58:14,085 - trainer - INFO -     val_loss       : 53678.2685546875
+2020-07-14 11:58:14,086 - trainer - INFO -     pred_cost      : 31.74682410009976
+2020-07-14 11:58:14,086 - trainer - INFO -     loss           : 10689.669938712284
+2020-07-14 11:58:14,086 - trainer - INFO -     precision      : 0.9580472377055596
+2020-07-14 11:58:14,086 - trainer - INFO -     val_recall     : 0.8441328598468688
+2020-07-14 11:58:14,086 - trainer - INFO -     val_f1         : 0.8344542611048489
+2020-07-14 11:58:14,086 - trainer - INFO -     val_kl_cost    : 53181.551432291664
+2020-07-14 11:58:14,087 - trainer - INFO -     val_accuracy   : 0.8388221153846155
+2020-07-14 11:58:14,087 - trainer - INFO -     epoch          : 84
+2020-07-14 11:58:14,087 - trainer - INFO -     accuracy       : 0.9536253078817734
+2020-07-14 11:58:14,087 - trainer - INFO -     val_pred_cost  : 496.71705627441406
+2020-07-14 11:58:14,087 - trainer - INFO -     kl_cost        : 10657.923104121768
+2020-07-14 11:58:14,087 - trainer - INFO -     val_precision  : 0.8384956542741634
+2020-07-14 11:58:14,102 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch84.pth ...
+2020-07-14 11:58:14,118 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:59:05,667 - trainer - INFO -     recall         : 0.9572485932300864
+2020-07-14 11:59:05,668 - trainer - INFO -     f1             : 0.9560936938854762
+2020-07-14 11:59:05,668 - trainer - INFO -     val_loss       : 53655.949869791664
+2020-07-14 11:59:05,668 - trainer - INFO -     pred_cost      : 36.256819577052674
+2020-07-14 11:59:05,669 - trainer - INFO -     loss           : 10687.130825700431
+2020-07-14 11:59:05,669 - trainer - INFO -     precision      : 0.9574199130932296
+2020-07-14 11:59:05,669 - trainer - INFO -     val_recall     : 0.8475660889299212
+2020-07-14 11:59:05,669 - trainer - INFO -     val_f1         : 0.8379506394145171
+2020-07-14 11:59:05,669 - trainer - INFO -     val_kl_cost    : 53146.677408854164
+2020-07-14 11:59:05,670 - trainer - INFO -     val_accuracy   : 0.8445813301282051
+2020-07-14 11:59:05,670 - trainer - INFO -     epoch          : 85
+2020-07-14 11:59:05,670 - trainer - INFO -     accuracy       : 0.9533559113300492
+2020-07-14 11:59:05,670 - trainer - INFO -     val_pred_cost  : 509.2727406819661
+2020-07-14 11:59:05,670 - trainer - INFO -     kl_cost        : 10650.874006600216
+2020-07-14 11:59:05,670 - trainer - INFO -     val_precision  : 0.8433453801258515
+2020-07-14 11:59:05,685 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch85.pth ...
+2020-07-14 11:59:05,702 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 11:59:57,307 - trainer - INFO -     recall         : 0.9576375496252668
+2020-07-14 11:59:57,309 - trainer - INFO -     f1             : 0.956836173409076
+2020-07-14 11:59:57,309 - trainer - INFO -     val_loss       : 53594.967122395836
+2020-07-14 11:59:57,309 - trainer - INFO -     pred_cost      : 34.4947273813445
+2020-07-14 11:59:57,309 - trainer - INFO -     loss           : 10678.230872844828
+2020-07-14 11:59:57,309 - trainer - INFO -     precision      : 0.9588675840032556
+2020-07-14 11:59:57,309 - trainer - INFO -     val_recall     : 0.8422507085748084
+2020-07-14 11:59:57,310 - trainer - INFO -     val_f1         : 0.8330195683733032
+2020-07-14 11:59:57,310 - trainer - INFO -     val_kl_cost    : 53106.7265625
+2020-07-14 11:59:57,310 - trainer - INFO -     val_accuracy   : 0.8380709134615385
+2020-07-14 11:59:57,310 - trainer - INFO -     epoch          : 86
+2020-07-14 11:59:57,310 - trainer - INFO -     accuracy       : 0.9542603140394089
+2020-07-14 11:59:57,310 - trainer - INFO -     val_pred_cost  : 488.2403793334961
+2020-07-14 11:59:57,311 - trainer - INFO -     kl_cost        : 10643.736142914871
+2020-07-14 11:59:57,311 - trainer - INFO -     val_precision  : 0.8354502609965425
+2020-07-14 11:59:57,325 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch86.pth ...
+2020-07-14 11:59:57,342 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:00:48,900 - trainer - INFO -     recall         : 0.9580141662573792
+2020-07-14 12:00:48,901 - trainer - INFO -     f1             : 0.9564771738097008
+2020-07-14 12:00:48,902 - trainer - INFO -     val_loss       : 53573.8662109375
+2020-07-14 12:00:48,902 - trainer - INFO -     pred_cost      : 35.12217399991792
+2020-07-14 12:00:48,902 - trainer - INFO -     loss           : 10671.709843076509
+2020-07-14 12:00:48,902 - trainer - INFO -     precision      : 0.9584142897127014
+2020-07-14 12:00:48,902 - trainer - INFO -     val_recall     : 0.84607079563258
+2020-07-14 12:00:48,902 - trainer - INFO -     val_f1         : 0.8375204186377275
+2020-07-14 12:00:48,903 - trainer - INFO -     val_kl_cost    : 53071.890950520836
+2020-07-14 12:00:48,903 - trainer - INFO -     val_accuracy   : 0.8445612980769232
+2020-07-14 12:00:48,903 - trainer - INFO -     epoch          : 87
+2020-07-14 12:00:48,903 - trainer - INFO -     accuracy       : 0.9537600061576355
+2020-07-14 12:00:48,903 - trainer - INFO -     val_pred_cost  : 501.9746729532878
+2020-07-14 12:00:48,903 - trainer - INFO -     kl_cost        : 10636.587604391163
+2020-07-14 12:00:48,903 - trainer - INFO -     val_precision  : 0.8393662944590957
+2020-07-14 12:00:48,918 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch87.pth ...
+2020-07-14 12:00:48,934 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:01:40,397 - trainer - INFO -     recall         : 0.9572345000453716
+2020-07-14 12:01:40,398 - trainer - INFO -     f1             : 0.9565175062043826
+2020-07-14 12:01:40,398 - trainer - INFO -     val_loss       : 53544.774739583336
+2020-07-14 12:01:40,398 - trainer - INFO -     pred_cost      : 34.48424388622416
+2020-07-14 12:01:40,398 - trainer - INFO -     loss           : 10663.553626751078
+2020-07-14 12:01:40,399 - trainer - INFO -     precision      : 0.958195719559144
+2020-07-14 12:01:40,399 - trainer - INFO -     val_recall     : 0.8437359757440156
+2020-07-14 12:01:40,399 - trainer - INFO -     val_f1         : 0.8346006335626318
+2020-07-14 12:01:40,399 - trainer - INFO -     val_kl_cost    : 53034.765625
+2020-07-14 12:01:40,399 - trainer - INFO -     val_accuracy   : 0.8426282051282051
+2020-07-14 12:01:40,400 - trainer - INFO -     epoch          : 88
+2020-07-14 12:01:40,400 - trainer - INFO -     accuracy       : 0.9539909174876847
+2020-07-14 12:01:40,400 - trainer - INFO -     val_pred_cost  : 510.0088195800781
+2020-07-14 12:01:40,400 - trainer - INFO -     kl_cost        : 10629.069436961207
+2020-07-14 12:01:40,400 - trainer - INFO -     val_precision  : 0.838324645203716
+2020-07-14 12:01:40,414 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch88.pth ...
+2020-07-14 12:01:40,431 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:02:31,859 - trainer - INFO -     recall         : 0.9553743751950092
+2020-07-14 12:02:31,860 - trainer - INFO -     f1             : 0.9550343609637612
+2020-07-14 12:02:31,860 - trainer - INFO -     val_loss       : 53493.6416015625
+2020-07-14 12:02:31,860 - trainer - INFO -     pred_cost      : 33.70008524532976
+2020-07-14 12:02:31,860 - trainer - INFO -     loss           : 10655.956795528018
+2020-07-14 12:02:31,861 - trainer - INFO -     precision      : 0.9570683069507248
+2020-07-14 12:02:31,861 - trainer - INFO -     val_recall     : 0.8437679598200801
+2020-07-14 12:02:31,861 - trainer - INFO -     val_f1         : 0.8350277208965026
+2020-07-14 12:02:31,861 - trainer - INFO -     val_kl_cost    : 53000.521484375
+2020-07-14 12:02:31,861 - trainer - INFO -     val_accuracy   : 0.8406550480769232
+2020-07-14 12:02:31,862 - trainer - INFO -     epoch          : 89
+2020-07-14 12:02:31,862 - trainer - INFO -     accuracy       : 0.9526631773399015
+2020-07-14 12:02:31,862 - trainer - INFO -     val_pred_cost  : 493.12085342407227
+2020-07-14 12:02:31,862 - trainer - INFO -     kl_cost        : 10622.256701239225
+2020-07-14 12:02:31,862 - trainer - INFO -     val_precision  : 0.8392507037371257
+2020-07-14 12:02:31,876 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch89.pth ...
+2020-07-14 12:02:31,893 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:03:23,332 - trainer - INFO -     recall         : 0.9548318533096307
+2020-07-14 12:03:23,333 - trainer - INFO -     f1             : 0.9541081690839512
+2020-07-14 12:03:23,333 - trainer - INFO -     val_loss       : 53455.063802083336
+2020-07-14 12:03:23,333 - trainer - INFO -     pred_cost      : 35.65872585362401
+2020-07-14 12:03:23,333 - trainer - INFO -     loss           : 10650.930495689656
+2020-07-14 12:03:23,334 - trainer - INFO -     precision      : 0.9558438846808389
+2020-07-14 12:03:23,334 - trainer - INFO -     val_recall     : 0.8479941173676709
+2020-07-14 12:03:23,334 - trainer - INFO -     val_f1         : 0.8376192120047262
+2020-07-14 12:03:23,334 - trainer - INFO -     val_kl_cost    : 52961.674153645836
+2020-07-14 12:03:23,334 - trainer - INFO -     val_accuracy   : 0.8419971955128206
+2020-07-14 12:03:23,335 - trainer - INFO -     epoch          : 90
+2020-07-14 12:03:23,335 - trainer - INFO -     accuracy       : 0.9517587746305419
+2020-07-14 12:03:23,335 - trainer - INFO -     val_pred_cost  : 493.3892936706543
+2020-07-14 12:03:23,335 - trainer - INFO -     kl_cost        : 10615.271736934268
+2020-07-14 12:03:23,335 - trainer - INFO -     val_precision  : 0.8394379422442787
+2020-07-14 12:03:23,350 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch90.pth ...
+2020-07-14 12:03:23,366 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:04:15,027 - trainer - INFO -     recall         : 0.958097606065166
+2020-07-14 12:04:15,027 - trainer - INFO -     f1             : 0.9573215509327715
+2020-07-14 12:04:15,027 - trainer - INFO -     val_loss       : 53441.728841145836
+2020-07-14 12:04:15,028 - trainer - INFO -     pred_cost      : 34.025455146000304
+2020-07-14 12:04:15,028 - trainer - INFO -     loss           : 10641.729795258621
+2020-07-14 12:04:15,028 - trainer - INFO -     precision      : 0.9587584287773325
+2020-07-14 12:04:15,028 - trainer - INFO -     val_recall     : 0.8366288452067859
+2020-07-14 12:04:15,028 - trainer - INFO -     val_f1         : 0.8268532059326851
+2020-07-14 12:04:15,029 - trainer - INFO -     val_kl_cost    : 52928.909830729164
+2020-07-14 12:04:15,029 - trainer - INFO -     val_accuracy   : 0.8303385416666668
+2020-07-14 12:04:15,029 - trainer - INFO -     epoch          : 91
+2020-07-14 12:04:15,029 - trainer - INFO -     accuracy       : 0.9550685036945813
+2020-07-14 12:04:15,029 - trainer - INFO -     val_pred_cost  : 512.8196741739908
+2020-07-14 12:04:15,030 - trainer - INFO -     kl_cost        : 10607.704303609913
+2020-07-14 12:04:15,030 - trainer - INFO -     val_precision  : 0.8290209014441853
+2020-07-14 12:04:15,051 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch91.pth ...
+2020-07-14 12:04:15,088 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:05:06,524 - trainer - INFO -     recall         : 0.9558723108116042
+2020-07-14 12:05:06,525 - trainer - INFO -     f1             : 0.9551079694681386
+2020-07-14 12:05:06,525 - trainer - INFO -     val_loss       : 53391.840169270836
+2020-07-14 12:05:06,525 - trainer - INFO -     pred_cost      : 33.29355001449585
+2020-07-14 12:05:06,525 - trainer - INFO -     loss           : 10634.134344692888
+2020-07-14 12:05:06,525 - trainer - INFO -     precision      : 0.957394183860729
+2020-07-14 12:05:06,525 - trainer - INFO -     val_recall     : 0.837135892903338
+2020-07-14 12:05:06,526 - trainer - INFO -     val_f1         : 0.827903257792325
+2020-07-14 12:05:06,526 - trainer - INFO -     val_kl_cost    : 52894.883463541664
+2020-07-14 12:05:06,526 - trainer - INFO -     val_accuracy   : 0.831620592948718
+2020-07-14 12:05:06,526 - trainer - INFO -     epoch          : 92
+2020-07-14 12:05:06,526 - trainer - INFO -     accuracy       : 0.952336052955665
+2020-07-14 12:05:06,526 - trainer - INFO -     val_pred_cost  : 496.95699310302734
+2020-07-14 12:05:06,526 - trainer - INFO -     kl_cost        : 10600.840837149784
+2020-07-14 12:05:06,527 - trainer - INFO -     val_precision  : 0.8304279987771018
+2020-07-14 12:05:06,539 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch92.pth ...
+2020-07-14 12:05:06,553 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:05:57,905 - trainer - INFO -     recall         : 0.9579916953316329
+2020-07-14 12:05:57,906 - trainer - INFO -     f1             : 0.9570527814592503
+2020-07-14 12:05:57,906 - trainer - INFO -     val_loss       : 53365.34375
+2020-07-14 12:05:57,907 - trainer - INFO -     pred_cost      : 34.072375461972996
+2020-07-14 12:05:57,907 - trainer - INFO -     loss           : 10627.597285829741
+2020-07-14 12:05:57,907 - trainer - INFO -     precision      : 0.9585397182188189
+2020-07-14 12:05:57,907 - trainer - INFO -     val_recall     : 0.8449795854440789
+2020-07-14 12:05:57,907 - trainer - INFO -     val_f1         : 0.8351954690486356
+2020-07-14 12:05:57,907 - trainer - INFO -     val_kl_cost    : 52860.982421875
+2020-07-14 12:05:57,907 - trainer - INFO -     val_accuracy   : 0.8439302884615385
+2020-07-14 12:05:57,908 - trainer - INFO -     epoch          : 93
+2020-07-14 12:05:57,908 - trainer - INFO -     accuracy       : 0.9547606219211823
+2020-07-14 12:05:57,908 - trainer - INFO -     val_pred_cost  : 504.36131540934247
+2020-07-14 12:05:57,908 - trainer - INFO -     kl_cost        : 10593.524868669181
+2020-07-14 12:05:57,908 - trainer - INFO -     val_precision  : 0.8372576351041235
+2020-07-14 12:05:57,920 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch93.pth ...
+2020-07-14 12:05:57,935 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:06:49,614 - trainer - INFO -     recall         : 0.956327230108341
+2020-07-14 12:06:49,615 - trainer - INFO -     f1             : 0.9556600473593796
+2020-07-14 12:06:49,615 - trainer - INFO -     val_loss       : 53305.374674479164
+2020-07-14 12:06:49,615 - trainer - INFO -     pred_cost      : 33.22271766333744
+2020-07-14 12:06:49,615 - trainer - INFO -     loss           : 10620.268083243534
+2020-07-14 12:06:49,615 - trainer - INFO -     precision      : 0.9580113893475294
+2020-07-14 12:06:49,615 - trainer - INFO -     val_recall     : 0.8353381400819361
+2020-07-14 12:06:49,615 - trainer - INFO -     val_f1         : 0.824550314424482
+2020-07-14 12:06:49,616 - trainer - INFO -     val_kl_cost    : 52820.554036458336
+2020-07-14 12:06:49,616 - trainer - INFO -     val_accuracy   : 0.8303385416666668
+2020-07-14 12:06:49,616 - trainer - INFO -     epoch          : 94
+2020-07-14 12:06:49,616 - trainer - INFO -     accuracy       : 0.9535098522167488
+2020-07-14 12:06:49,616 - trainer - INFO -     val_pred_cost  : 484.8205159505208
+2020-07-14 12:06:49,616 - trainer - INFO -     kl_cost        : 10587.045342807112
+2020-07-14 12:06:49,616 - trainer - INFO -     val_precision  : 0.8277366206619021
+2020-07-14 12:06:49,629 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch94.pth ...
+2020-07-14 12:06:49,643 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:07:41,213 - trainer - INFO -     recall         : 0.9559062712819816
+2020-07-14 12:07:41,214 - trainer - INFO -     f1             : 0.9552842444910192
+2020-07-14 12:07:41,215 - trainer - INFO -     val_loss       : 53265.067708333336
+2020-07-14 12:07:41,215 - trainer - INFO -     pred_cost      : 35.1058516666807
+2020-07-14 12:07:41,215 - trainer - INFO -     loss           : 10614.792446794181
+2020-07-14 12:07:41,215 - trainer - INFO -     precision      : 0.9571313587864431
+2020-07-14 12:07:41,215 - trainer - INFO -     val_recall     : 0.8512077886135683
+2020-07-14 12:07:41,215 - trainer - INFO -     val_f1         : 0.8431542728524941
+2020-07-14 12:07:41,215 - trainer - INFO -     val_kl_cost    : 52784.865234375
+2020-07-14 12:07:41,216 - trainer - INFO -     val_accuracy   : 0.845292467948718
+2020-07-14 12:07:41,216 - trainer - INFO -     epoch          : 95
+2020-07-14 12:07:41,216 - trainer - INFO -     accuracy       : 0.9522398399014779
+2020-07-14 12:07:41,216 - trainer - INFO -     val_pred_cost  : 480.20210520426434
+2020-07-14 12:07:41,216 - trainer - INFO -     kl_cost        : 10579.686573949353
+2020-07-14 12:07:41,216 - trainer - INFO -     val_precision  : 0.8436992537388952
+2020-07-14 12:07:41,229 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch95.pth ...
+2020-07-14 12:07:41,243 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:08:32,800 - trainer - INFO -     recall         : 0.9566253067247202
+2020-07-14 12:08:32,801 - trainer - INFO -     f1             : 0.9553959769784304
+2020-07-14 12:08:32,801 - trainer - INFO -     val_loss       : 53264.7265625
+2020-07-14 12:08:32,801 - trainer - INFO -     pred_cost      : 35.150612732459756
+2020-07-14 12:08:32,801 - trainer - INFO -     loss           : 10607.529751481681
+2020-07-14 12:08:32,802 - trainer - INFO -     precision      : 0.9572723395228095
+2020-07-14 12:08:32,802 - trainer - INFO -     val_recall     : 0.8431013808893814
+2020-07-14 12:08:32,802 - trainer - INFO -     val_f1         : 0.831037502147825
+2020-07-14 12:08:32,802 - trainer - INFO -     val_kl_cost    : 52753.873046875
+2020-07-14 12:08:32,802 - trainer - INFO -     val_accuracy   : 0.8349959935897435
+2020-07-14 12:08:32,802 - trainer - INFO -     epoch          : 96
+2020-07-14 12:08:32,802 - trainer - INFO -     accuracy       : 0.9521436268472906
+2020-07-14 12:08:32,803 - trainer - INFO -     val_pred_cost  : 510.85335032145184
+2020-07-14 12:08:32,803 - trainer - INFO -     kl_cost        : 10572.379158809268
+2020-07-14 12:08:32,803 - trainer - INFO -     val_precision  : 0.83221941823457
+2020-07-14 12:08:32,815 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch96.pth ...
+2020-07-14 12:08:32,829 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:09:24,313 - trainer - INFO -     recall         : 0.9557995669135548
+2020-07-14 12:09:24,314 - trainer - INFO -     f1             : 0.9548126406116935
+2020-07-14 12:09:24,314 - trainer - INFO -     val_loss       : 53215.314778645836
+2020-07-14 12:09:24,314 - trainer - INFO -     pred_cost      : 34.85553080460121
+2020-07-14 12:09:24,315 - trainer - INFO -     loss           : 10600.324606007543
+2020-07-14 12:09:24,315 - trainer - INFO -     precision      : 0.9564802719711912
+2020-07-14 12:09:24,315 - trainer - INFO -     val_recall     : 0.8523453107713292
+2020-07-14 12:09:24,315 - trainer - INFO -     val_f1         : 0.8438099369820149
+2020-07-14 12:09:24,315 - trainer - INFO -     val_kl_cost    : 52713.9306640625
+2020-07-14 12:09:24,315 - trainer - INFO -     val_accuracy   : 0.8478365384615385
+2020-07-14 12:09:24,316 - trainer - INFO -     epoch          : 97
+2020-07-14 12:09:24,316 - trainer - INFO -     accuracy       : 0.952336052955665
+2020-07-14 12:09:24,316 - trainer - INFO -     val_pred_cost  : 501.38366953531903
+2020-07-14 12:09:24,316 - trainer - INFO -     kl_cost        : 10565.469069908406
+2020-07-14 12:09:24,316 - trainer - INFO -     val_precision  : 0.8448482441301287
+2020-07-14 12:09:24,329 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch97.pth ...
+2020-07-14 12:09:24,345 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:10:15,917 - trainer - INFO -     recall         : 0.955807519555169
+2020-07-14 12:10:15,918 - trainer - INFO -     f1             : 0.9544958499277236
+2020-07-14 12:10:15,918 - trainer - INFO -     val_loss       : 53175.167643229164
+2020-07-14 12:10:15,918 - trainer - INFO -     pred_cost      : 33.740682569043386
+2020-07-14 12:10:15,918 - trainer - INFO -     loss           : 10592.552667025862
+2020-07-14 12:10:15,919 - trainer - INFO -     precision      : 0.955699908515006
+2020-07-14 12:10:15,919 - trainer - INFO -     val_recall     : 0.8415343719951665
+2020-07-14 12:10:15,919 - trainer - INFO -     val_f1         : 0.83303571919479
+2020-07-14 12:10:15,919 - trainer - INFO -     val_kl_cost    : 52679.445638020836
+2020-07-14 12:10:15,919 - trainer - INFO -     val_accuracy   : 0.8393930288461539
+2020-07-14 12:10:15,919 - trainer - INFO -     epoch          : 98
+2020-07-14 12:10:15,920 - trainer - INFO -     accuracy       : 0.9517587746305419
+2020-07-14 12:10:15,920 - trainer - INFO -     val_pred_cost  : 495.7217788696289
+2020-07-14 12:10:15,920 - trainer - INFO -     kl_cost        : 10558.811994881466
+2020-07-14 12:10:15,920 - trainer - INFO -     val_precision  : 0.839554636439328
+2020-07-14 12:10:15,932 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch98.pth ...
+2020-07-14 12:10:15,947 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:11:07,596 - trainer - INFO -     recall         : 0.9561365268498621
+2020-07-14 12:11:07,597 - trainer - INFO -     f1             : 0.9557999864705006
+2020-07-14 12:11:07,597 - trainer - INFO -     val_loss       : 53158.765950520836
+2020-07-14 12:11:07,597 - trainer - INFO -     pred_cost      : 33.611095691549366
+2020-07-14 12:11:07,598 - trainer - INFO -     loss           : 10584.915173760775
+2020-07-14 12:11:07,598 - trainer - INFO -     precision      : 0.9581426318582196
+2020-07-14 12:11:07,598 - trainer - INFO -     val_recall     : 0.8438760928344583
+2020-07-14 12:11:07,598 - trainer - INFO -     val_f1         : 0.8362954485313443
+2020-07-14 12:11:07,598 - trainer - INFO -     val_kl_cost    : 52647.360677083336
+2020-07-14 12:11:07,598 - trainer - INFO -     val_accuracy   : 0.8399839743589744
+2020-07-14 12:11:07,598 - trainer - INFO -     epoch          : 99
+2020-07-14 12:11:07,599 - trainer - INFO -     accuracy       : 0.9534521243842364
+2020-07-14 12:11:07,599 - trainer - INFO -     val_pred_cost  : 511.4056053161621
+2020-07-14 12:11:07,599 - trainer - INFO -     kl_cost        : 10551.304115032328
+2020-07-14 12:11:07,599 - trainer - INFO -     val_precision  : 0.8397411806658323
+2020-07-14 12:11:07,611 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch99.pth ...
+2020-07-14 12:11:07,626 - trainer - INFO - Saving current best: model_best.pth ...
+2020-07-14 12:11:59,271 - trainer - INFO -     recall         : 0.9559065435718618
+2020-07-14 12:11:59,272 - trainer - INFO -     f1             : 0.9548505156009353
+2020-07-14 12:11:59,272 - trainer - INFO -     val_loss       : 53130.044270833336
+2020-07-14 12:11:59,272 - trainer - INFO -     pred_cost      : 35.41184951519144
+2020-07-14 12:11:59,272 - trainer - INFO -     loss           : 10580.080734779094
+2020-07-14 12:11:59,272 - trainer - INFO -     precision      : 0.9573750897184344
+2020-07-14 12:11:59,273 - trainer - INFO -     val_recall     : 0.8474521382292242
+2020-07-14 12:11:59,273 - trainer - INFO -     val_f1         : 0.838305946630514
+2020-07-14 12:11:59,273 - trainer - INFO -     val_kl_cost    : 52611.156901041664
+2020-07-14 12:11:59,273 - trainer - INFO -     val_accuracy   : 0.8426682692307693
+2020-07-14 12:11:59,273 - trainer - INFO -     epoch          : 100
+2020-07-14 12:11:59,273 - trainer - INFO -     accuracy       : 0.9519512007389163
+2020-07-14 12:11:59,273 - trainer - INFO -     val_pred_cost  : 518.8876355489095
+2020-07-14 12:11:59,274 - trainer - INFO -     kl_cost        : 10544.668911637931
+2020-07-14 12:11:59,274 - trainer - INFO -     val_precision  : 0.8393197235040177
+2020-07-14 12:11:59,286 - trainer - INFO - Saving checkpoint: saved/models/HAR_Bayes_CNN/0714_104127/checkpoint-epoch100.pth ...
+2020-07-14 12:11:59,301 - trainer - INFO - Saving current best: model_best.pth ...

@@ -1,0 +1,67 @@
+{
+    "name": "HAR_Normal_CNN",
+    "lr_scheduler": {
+        "args": {
+            "gamma": 0.1,
+            "step_size": 50
+        },
+        "type": "StepLR"
+    },
+    "loss": "cross_entropy_loss",
+    "data_loader": {
+        "args": {
+            "validation_split": 0.1,
+            "shuffle": true,
+            "data_dir": "data/UCI_HAR_Dataset",
+            "num_workers": 0,
+            "test_split": 0.1,
+            "batch_size": 128
+        },
+        "type": "HumanActivityRecognitionDataLoader"
+    },
+    "optimizer": {
+        "args": {
+            "amsgrad": true,
+            "weight_decay": 0,
+            "lr": 0.001
+        },
+        "type": "Adam"
+    },
+    "evaluater": {
+        "verbosity": 2,
+        "visualization": {
+            "scatter": true
+        },
+        "result_dir": "saved/"
+    },
+    "n_gpu": 1,
+    "trainer": {
+        "save_dir": "saved/",
+        "verbosity": 2,
+        "early_stop": 10,
+        "save_period": 1,
+        "monitor": "min val_loss",
+        "type": "Normal",
+        "epochs": 1,
+        "tensorboard": true
+    },
+    "metrics": [
+        "accuracy",
+        "precision",
+        "recall",
+        "f1"
+    ],
+    "arch": {
+        "args": {
+            "num_classes": 6,
+            "kernels": [
+                3
+            ],
+            "input_dim": 9,
+            "filters": [
+                256
+            ]
+        },
+        "type": "CNN"
+    }
+}

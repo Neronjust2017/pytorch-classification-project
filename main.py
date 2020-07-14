@@ -11,7 +11,7 @@ from trainer import Trainer, TrainerMc, TrainerQd, TrainerDe
 from evaluater import Evaluater, EvaluaterMC, EvaluaterQd, EvaluaterDE
 
 # fix random seeds for reproducibility
-SEED = 123
+SEED = 0
 torch.manual_seed(SEED)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
